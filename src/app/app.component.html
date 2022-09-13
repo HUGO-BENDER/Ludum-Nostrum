@@ -1,8 +1,18 @@
 <mat-sidenav-container fullscreen>
-    <mat-sidenav #appsidenav mode="over" opened class="sidenav" [fixedInViewport]="true" >
-      Aca va el componente de la sidebar
-    </mat-sidenav>
-    <mat-sidenav-content>
+  <mat-sidenav
+    #appsidenav
+    mode="over"
+    opened
+    class="sidenav"
+    [fixedInViewport]="true"
+  >
+    <div wireframe-title="SideNav">&nbsp;</div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div fxLayout="column" fxFlexFill>
+      <app-toolbar fxFlex></app-toolbar>
       <router-outlet></router-outlet>
-    </mat-sidenav-content>
+      <div fxFlex="30"><app-footer></app-footer></div>
+    </div>
+  </mat-sidenav-content>
 </mat-sidenav-container>

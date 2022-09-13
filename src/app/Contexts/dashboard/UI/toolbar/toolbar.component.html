@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <app-logo (click)="toggleAppSidenav()"></app-logo>
+    <div class="tool-bar-spacer">
+      <span fxHide.lt-sm="true" class="fix-center-title">
+        "App.Title"
+      </span>
+    </div>
+
+    <!-- <div *ngIf="user | async; let user; else loguearse;" class="toolbar-inline">
+      <ngx-auth-firebaseui-avatar
+      (onSignOut)="logout()"></ngx-auth-firebaseui-avatar>
+    </div>
+    <ng-template #loguearse> -->
+        <h3 class="textlogin" fxHide.lt-sm="true" (click)="login()">'App.MenuUser.Login'</h3>
+        <button mat-mini-fab color="primary" (click)="login()">
+          <mat-icon class="iconlogin">how_to_reg</mat-icon>
+        </button>
+    <!-- </ng-template> -->
+  </mat-toolbar-row>
+</mat-toolbar>

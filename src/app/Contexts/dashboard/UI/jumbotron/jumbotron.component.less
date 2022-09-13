@@ -1,0 +1,150 @@
+.hero-section {
+  position: relative;
+  min-height: 40vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-layer {
+  position: absolute;
+  min-height: 40vh;
+}
+
+.layer1 {
+     width: 150%;
+     margin-left: -33%;
+     background-image:
+      radial-gradient( rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 80%),
+      linear-gradient(180deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(172deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(157deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(143deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(127deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(112deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(97deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(82deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(67deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(52deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(37deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(22deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(8deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(0deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB);
+      background-position: 0% 0%;
+      background-size: 100% 200%;
+  }
+
+  .layer2 {
+    width: 150%;
+    margin-left: -33%;
+    animation-name: burst;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    background-image:
+      radial-gradient( rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 40%),
+      linear-gradient(180deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(172deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(157deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(143deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(127deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(112deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(97deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(82deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(67deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(52deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(37deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(22deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF),
+      linear-gradient(8deg, rgba(0,0,0,0) 50%, #1D7EAB 50%, #1D7EAB),
+      linear-gradient(0deg, rgba(0,0,0,0) 50%, #4AE0FF 50%, #4AE0FF);
+      background-position: 0% 0%;
+      background-size: 100% 200%;
+    content: "";
+    opacity: 1;
+
+  }
+
+  @keyframes burst {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+.layerImg{
+  margin-left: 25%;
+  margin-top: 10vh;
+  height: 30vh;
+  min-height: 30vh;
+  width: 30vh;
+}
+
+.text-wrapper{
+  margin: 3%;
+  margin-left: 40%;
+  width: 50%;
+  max-width: 650px;
+  min-height: 80vh;
+	transform: perspective(500px) rotateY(-20deg);
+}
+
+.texto{
+  font: bold;
+  font-size:3vw;
+}
+.logo-angular{
+  height: 5vw;
+  border-right:rgba(0, 0, 0, 0) 10px solid;
+  border-radius: 5px;
+  background-color: rgba(169, 169, 169, 0.5);
+}
+.logo-phaser{
+  height: 10vw;
+}
+@media screen and (max-width: 601px) {
+  .texto {
+    font-size: 20px;
+  }
+  .layerImg{
+    margin-left: 5vw;
+  }
+  .logo-angular{
+    height: 5vw;
+  }
+  .logo-phaser{
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .texto {
+     font-size: 36px;
+  }
+  .logo-angular{
+    height: 50px;
+  }
+  .logo-phaser{
+    height: 100px;
+  }
+}
+
+.text1{
+  margin-right: 5%;
+}
+
+.text2{
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.text3{
+  margin-left: 30%;
+}
+
+
+
+

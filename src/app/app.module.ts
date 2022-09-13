@@ -7,13 +7,25 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 // --Modules in App
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppMaterialModule } from './share/app.material.module';
-import { HomeComponent } from './Contexts/dashboard/UI/home/home.component'
+import { AppMaterialModule } from './share/modules/app.material.module';
+import { LogoComponent } from './share/logo/logo.component';
+// --Pages
+import { HomeComponent } from './Contexts/dashboard/UI/page-home/home.component';
+import { ToolbarComponent } from './Contexts/dashboard/UI/toolbar/toolbar.component';
+import { JumbotronComponent } from './Contexts/dashboard/UI/jumbotron/jumbotron.component';
+import { FooterComponent } from './Contexts/dashboard/UI/footer/footer.component'
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ToolbarComponent,
+    JumbotronComponent,
+    FooterComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

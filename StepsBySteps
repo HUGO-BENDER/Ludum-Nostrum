@@ -54,10 +54,26 @@ Step 007:
     </mat-sidenav-content>
 </mat-sidenav-container>
 
+Refactor to
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #appsidenav mode="over" opened class="sidenav" [fixedInViewport]="true" >
+    <div wireframe-title="SideNav"></div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div fxLayout='column' fxFlexFill>
+      <div fxFlex="50px"  wireframe-title="Toolbar"><app-toolbar></app-toolbar></div>
+      <router-outlet></router-outlet>
+      <div fxFlex="30"  wireframe-title="footer"><app-footer></app-footer></div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
 step 008
-    ng g c Contexts/dashboard/UI/home --skip-tests
+    ng g c contexts/dashboard/UI/home --skip-tests
     Edit app.routing.module
-    import {HomeComponent} from './Contexts/dashboard/UI/home/home.component'
+    import {HomeComponent} from './contexts/dashboard/UI/home/home.component'
     const routes: Routes = [
       {
         path: '**',
@@ -76,18 +92,94 @@ Step 009
         position: absolute; z-index: 8675309;
         top: 0; bottom: 0; right: 0; left: 0;
         background:
-          linear-gradient(to top right,
+           linear-gradient(to top right,
               transparent calc(50% - 1px), gray calc(50% - 1px),
               gray calc(50% + 1px), transparent calc(50% + 1px)),
-          linear-gradient(to bottom right,
+           linear-gradient(to bottom right,
               transparent calc(50% - 1px), gray calc(50% - 1px),
               gray calc(50% + 1px), transparent calc(50% + 1px)),
-          #FFF9;
-          content: "";
+           #FFF9;
+           content: attr(wireframe-title);
+           font-weight:bolder ;
+           font-size: large;
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
       }
+
       Install flex-layout
       npm i -s @angular/flex-layout @angular/cdk
 
-      with this we can make a wireframe desing
+      with this we can make a wireframe design
+      \dashboard\UI\home\home.component.html
+      <div fxLayout='column'>
+        <app-jumbotron fxFlex></app-jumbotron>
+        <div fxFlex="300px"  wireframe-title="Partidas"></div>
+        <div fxFlex="300px"  wireframe-title="Juegos"></div>
+        <div fxFlex="300px"  wireframe-title="Proyectos"></div>
+      </div>
+
+
+
+
+
+Step 010
+  ng g component /contexts/dashboard/UI/toolbar --skip-tests
+  ng g component /contexts/dashboard/UI/jumbotron --skip-tests
+  ng g component /contexts/dashboard/UI/footer  --skip-tests
+
+Step 011
+  Copy from Jumbotron and footer from old projects :-)
+
+Step 012
+  <div fxLayout='column' fxFlexFill>
+      <app-toolbar fxFlex></app-toolbar>  <<<-- edit
+      <router-outlet></router-outlet>
+      <div fxFlex="30"  wireframe-title="footer"><app-footer></app-footer></div>
+    </div>
+  add modules to Material. toolbar icon button
+  Create the toolbar
+
+  ng g component /share/logo  --skip-tests
+    copy component logo
+    put <app-Logo></app-Logo> in toolbar
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <app-logo (click)="toggleAppSidenav()"></app-logo>
+    toggleAppSidenav still doesn't do anything
+
+Step 013
+    work in sidenav
+    ng generate service services/components/sidenavService
+    -- TODO -- create content for sidebar
+
+Step 014
+    Module Auth
+    ng g m contexts/auth --routing
+    ng g c Contexts/auth/login --skip-tests
+    config routes
+    on click buton in toolbar call login component
+
+Step 015
+    FIREBASE !!
+    Create projetc in Firebase
+    npm install firebase
+    //-- if you want deploy
+      npm install -g firebase-tools
+      firebase login
+      firebase init
+
+
+
+Step 016
+      ngx-auth-firebaseui
+      go to https://ngx-auth-firebaseui.firebaseapp.com/getting-started  and follow the steps
+
+
+
+
+
+
 
 

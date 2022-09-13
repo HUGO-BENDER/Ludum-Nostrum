@@ -1,0 +1,69 @@
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #1976d2;
+  z-index: 0;
+  background-image: linear-gradient(
+    100deg,
+    rgba(0, 0, 0, 0) 75%,
+    #3f51b5 50%,
+    #3f51b5
+  );
+  color: white;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/assets/logo/footerBk.png") top 0 left 0 repeat,
+    url("/assets/logo/footerBk.png") top 75px left 150px repeat;
+  opacity: 0.15;
+  background-size: 300px auto;
+}
+
+.profile-author-picture {
+  border-radius: 50%;
+  width: 200px; /* Or whatever */
+  height: 200px; /* Or whatever */
+  margin: auto; /* Magic! */
+  background-image: url("/assets/images/foto_perfil.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-block {
+  margin: 0px 0.3rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+}
+.footer-block-heading {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 8px 0px 12px;
+}
+
+p,
+ol,
+ul,
+li,
+input,
+a {
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
