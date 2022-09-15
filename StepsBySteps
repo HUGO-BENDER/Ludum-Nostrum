@@ -120,10 +120,6 @@ Step 009
         <div fxFlex="300px"  wireframe-title="Proyectos"></div>
       </div>
 
-
-
-
-
 Step 010
   ng g component /contexts/dashboard/UI/toolbar --skip-tests
   ng g component /contexts/dashboard/UI/jumbotron --skip-tests
@@ -154,28 +150,79 @@ Step 013
     ng generate service services/components/sidenavService
     -- TODO -- create content for sidebar
 
+
 Step 014
+    FIREBASE !!
+    Create project in Firebase
+    npm install firebase
+    follow   https://github.com/angular/angularfire/blob/HEAD/docs/install-and-setup.md
+    //-- when you want deploy
+      npm install -g firebase-tools
+      firebase login
+      firebase init
+    //---------------  not yet
+
+    In app.module
+    import { AngularFireModule } from '@angular/fire/compat';
+    import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+    import { environment } from '../environments/environment';
+
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
+
+Step 015
+     Refactorize Footer wiht Clean Arquitecture
+     footer +
+            |-+ domain
+            |-+ infraestructure
+            |-+ UI
+            | footer.module.ts
+
+     domain +
+            |- xxx-model              the entities. only definitions        /*- como expediente, usuario, document, etc -*/
+            |- xxx-gateway            the interface for the providers       /*- "lo que quiero" no importa como -*/
+            !- xxx-use-cases-service  the service to provide the functions  /*- este servicio ya tiene inyectado el proovedor configurado -*/
+
+      infraestrucutre +
+                      |- driven-adapters +
+                      |                  |- hardcode-provider   implement the xxx-gateway   /*- "como lo obtengo" -*/
+                      |                  |- xxxxxxxx-provider   implement the xxx-gateway   /*- "como lo obtengo de SQL o Firebase o alguna API de servicio" -*/
+                      |- helpers +
+                      |          |-  /*- seguramente se necesitan mapear los DTO -*/
+      UI +
+         |- Angular component
+
+
+    In footer.module.ts inyect the provider
+    @NgModule({
+      imports: [CommonModule,FlexLayoutModule],
+      declarations: [FooterComponent],
+      exports:[ FooterComponent ],
+      providers: [{provide: MetadataGateway, useClass: MetadataFirebaseProviderService}]     <<<---- :-)
+    })
+
+    Create service MetadataFirebaseProviderService
+
+
+
+
+Step 016
     Module Auth
     ng g m contexts/auth --routing
     ng g c Contexts/auth/login --skip-tests
     config routes
     on click buton in toolbar call login component
 
-Step 015
-    FIREBASE !!
-    Create projetc in Firebase
-    npm install firebase
-    //-- if you want deploy
-      npm install -g firebase-tools
-      firebase login
-      firebase init
-
-
 
 Step 016
       ngx-auth-firebaseui
-      go to https://ngx-auth-firebaseui.firebaseapp.com/getting-started  and follow the steps
-
+      go to https://ngx-auth-firebaseui.firebaseapp.com/getting-started  and follow the steps. Not icons!
+      //-- npm i -s @angular/material @angular/cdk
+      npm i -s @angular/animations
+      npm i -s firebase @angular/fire
+      edit angular.json
+      npm i -s @angular/forms
+      ng add ngx-auth-firebaseui
 
 
 

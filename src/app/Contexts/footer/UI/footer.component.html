@@ -42,8 +42,9 @@
       <div fxLayout="column" fxLayoutAlign="center center">
         <div class="footer-block-heading">"footer.author"</div>
         <div class="profile-author-picture"></div>
+        <br>
         <div>"footer.author.profile"</div>
-        <div>Hugo Bender</div>
+        <div>{{(infoMetadata | async)?.author}}</div>
         <div>Developer</div>
         <div>"footer.author.contact"</div>
         <div><span>benderhugo@gmail.com</span></div>
@@ -52,9 +53,8 @@
   </div>
   <div fxLayout="column" fxLayoutAlign="center center">
     <br />
-    <h4>Super-powered by Alchemy Group</h4>
-    <h4>Copyright 2023</h4>
-    <!-- <h6>{{info.name}} {{ translate.instant('App.Footer.Version')}}: {{info.version}}</h6>
-      <h6>{{info.author}} Copyright {{info.year}}</h6> -->
+    <h4>Super-powered by {{(infoMetadata | async)?.company}}</h4>
+    <h4>{{(infoMetadata | async)?.license }} - {{(infoMetadata | async)?.year}}</h4>
+    <h6>{{(infoMetadata | async)?.name}} 'App.Footer.Version': {{(infoMetadata | async)?.version}}</h6>
   </div>
 </footer>
