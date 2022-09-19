@@ -1,0 +1,147 @@
+﻿{
+  "App": {
+    "Title": "Chess CrazyChess",
+    "Languages": {
+      "Catalan": "Catalan",
+      "English": "English",
+      "French": "French",
+      "Galician": "Galician",
+      "Spanish": "Spanish"
+    },
+    "SideNav": {
+      "Select_lang": "Select language",
+      "Actions": "Actions",
+      "Menu": "Menu"
+    },
+    "MenuUser": {
+      "AlertDisable": "Disable alerts",
+      "AlertEnable": "Enable alerts",
+      "Login": "Log in"
+    },
+    "Msg": {
+      "Cancel": "Cancel",
+      "CloseSession": "Sign off",
+      "confirmLogout": "Are you sure you want to log out?",
+      "Exit": "Get out",
+      "Welcome": "Welcome {{value}}",
+      "Back": "Previous",
+      "Next": "Following",
+      "Reset": "Restart"
+    }
+  },
+  "ngxauthfirebaseui": {
+    "emailConfirmationText": "A confirmation e-mail has been sent to you.\\n  Check your inbox and click on the link \\\"Confirm my e-mail\\\" to confirm your e-mail address.",
+    "emailConfirmationTitle": "Confirm your e-mail address!",
+    "emailErrorPatternText": "Please enter a valid e-mail address",
+    "emailErrorRequiredText": "E-mail is required",
+    "emailText": "E-mail",
+    "forgotPasswordButtonText": "Forgot Password?",
+    "guestButtonText": "continue as guest",
+    "loginButtonText": "Log in",
+    "nameErrorMaxLengthText": "The name is too long!",
+    "nameErrorMinLengthText": "The name is too short!",
+    "nameErrorRequiredText": "Name is required",
+    "nameText": "Name",
+    "passwordErrorRequiredText": "Password is required",
+    "passwordText": "Password",
+    "registerButtonText": "Register",
+    "registerCardTitleText": "Registration",
+    "registerTabText": "Register",
+    "resetPasswordActionButtonText": "Reset",
+    "resetPasswordErrorPatternText": "Please enter a valid e-mail address",
+    "resetPasswordErrorRequiredText": "E-mail is required to reset the password!",
+    "resetPasswordInputText": "Reset e-mail address to password",
+    "resetPasswordInstructionsText": "Reset requested. Check your e-mail instructions.",
+    "resetPasswordTabText": "Reset e-mail address to password",
+    "signInCardTitleText": "Signing in",
+    "signInTabText": "Sign in"
+  },
+  "Footer": {
+    "Version": "version"
+  },
+  "pag404": {
+    "Title": "404"
+  },
+  "pagAbout": {
+    "Title": "About us"
+  },
+  "pagHome": {
+    "CreateGame": "New game",
+    "GamesInProgress": "Games in progress",
+    "JoinGame": "Join",
+    "SeparadorO": "or",
+    "PlayNow": "Play now!",
+    "Title": "Start",
+    "AbortQuickGame": "Oh you won't play? We wait for you next time.",
+    "Completed": "Full",
+    "Delete": "Remove",
+    "GameDelete": "Game removed",
+    "Go": "Go",
+    "InfoGame": "More information",
+    "IsNotLogined": "You cannot execute this action without being logged",
+    "LastTurn": "Last shift",
+    "NewGameSuccess": "You have created a game",
+    "NoRecordsFound": "There are no records",
+    "Open": "Open",
+    "State": "State",
+    "Surrender": "Leave",
+    "Waiting": "Waiting"
+  },
+  "Game": {
+    "Chess": {
+      "ChessColor": {
+        "BLACK": "Black",
+        "RAMDOM": "Random",
+        "WHITE": "White"
+      },
+      "ColorLabel": "Colour",
+      "ColorSelect": "Select your color",
+      "Title": "Chess",
+      "BlackCheck": "Black moves. They are in check!",
+      "BlackTurn": "Black moves",
+      "Check": "Check the king",
+      "Congratulations": "CONGRATULATIONS",
+      "Draw": "Draw. It's a tie.",
+      "GameOver": "The game is over",
+      "InCheck": "Your king is in check!",
+      "Wait": "You have to wait for opponent.",
+      "WhiteCheck": "White moves. They are in check!",
+      "WhiteTurn": "White moves",
+      "YouLost": "Checkmate. Defeat.",
+      "YouMove": "It's your turn",
+      "YouWin": "Checkmate. Victory.",
+      "Subtitle": "Classic chess"
+    },
+    "Shared": {
+      "ChosseName": "Choose a name for this game",
+      "ChosseNameHintLabel": "15 characters maximum",
+      "CreateNewRecuitment": "Create a new game",
+      "GameConfig": "Configuration",
+      "GameConfigSummary": "Summary",
+      "GameDescriptionLabel": "Description",
+      "GameDescriptionPlaceHolder": "Optional: Enter a description",
+      "GameName": "Name of the game",
+      "GameNameIsRequired": "The name of the game is mandatory",
+      "SendNewRecruitment": "Submit",
+      "Defeat": "Defeat",
+      "SendTurn": "Turn has been sent",
+      "Victory": "Victory"
+    },
+    "Babydontcry": {
+      "Title": "Baby dont cry",
+      "Subtitle": "Move without waking them."
+    },
+    "Chinker": {
+      "Title": "Chinker",
+      "Subtitle": "Card game"
+    },
+    "Crazychess": {
+      "Title": "Chess crazy chess",
+      "Subtitle": "Let's change the rules"
+    },
+    "Flow": {
+      "Title": "Flow",
+      "Subtitle": "Phaser game"
+    }
+  }
+}

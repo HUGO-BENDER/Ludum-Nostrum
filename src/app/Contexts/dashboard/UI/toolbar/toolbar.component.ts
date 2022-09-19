@@ -15,7 +15,7 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login(){
+  goToAuth(){
     this.router.navigate(['/auth']);
   }
 

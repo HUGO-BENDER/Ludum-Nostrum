@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {HomeComponent} from './Contexts/dashboard/UI/page-home/home.component'
 const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren:() => import('./Contexts/dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
   {
     path: 'auth',
     loadChildren:() => import('./Contexts/auth/auth.module').then(m => m.AuthModule)
   },
   {
     path: '**',
-    component: HomeComponent
+    redirectTo: 'home'
   }
 ];
 

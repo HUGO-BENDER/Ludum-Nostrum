@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AuthProvider } from 'ngx-auth-firebaseui';
+import { SidenavService } from 'src/app/share/services/sidenav.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.less']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
 
-  constructor() { }
+  constructor(private sidenavService: SidenavService) { }
 
-  ngOnInit(): void {
+  errorCallback(errorData: any) {
+    console.log('login con errorCallback', errorData);
   }
+
+  successCallback(signInSuccessData: any) {
+    console.log('login con exito successCallback', signInSuccessData);
+    this.sidenavService.toggle();
+
+    // this.translate.get('App.Msg.Welcome', { value: signInSuccessData.displayName }).subscribe((res: string) => {
+    //   this.ShowToastMessage(res);
+    //   this.dialogRef.close();
+    // })
+  }
+
+
 
 }

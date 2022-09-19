@@ -6,26 +6,27 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 // --Firebase & Firebase UI
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-//import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 // --Modules in App
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppMaterialModule } from './share/modules/app.material.module';
+import { AppSharedModule } from './share/modules/app.shared.module';
 import { LogoComponent } from './share/logo/logo.component';
 // --Pages
-import { HomeComponent } from './Contexts/dashboard/UI/page-home/home.component';
-import { ToolbarComponent } from './Contexts/dashboard/UI/toolbar/toolbar.component';
-import { JumbotronComponent } from './Contexts/dashboard/UI/jumbotron/jumbotron.component';
+import { DashboardModule } from './Contexts/dashboard/dashboard.module';
+import { SidebarModule } from './Contexts/sidebar/sidebar.module';
+
+
+//--- Temporales
 import { FooterModule } from './Contexts/footer/footer.module';
+import { ToolbarComponent } from './Contexts/dashboard/UI/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ToolbarComponent,
-    JumbotronComponent,
-    LogoComponent
+    LogoComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,10 +34,13 @@ import { FooterModule } from './Contexts/footer/footer.module';
     FlexLayoutModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    NgxAuthFirebaseUIModule.forRoot(environment.firebaseConfig),
     AppRoutingModule,
-    AppMaterialModule,
-    FooterModule
+    AppSharedModule,
+    DashboardModule,
+    SidebarModule,
+    FooterModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

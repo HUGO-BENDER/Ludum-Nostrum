@@ -1,0 +1,147 @@
+﻿{
+  "App": {
+    "Languages": {
+      "Catalan": "Catalán",
+      "English": "Inglés",
+      "French": "Francés",
+      "Galician": "Gallego",
+      "Spanish": "Español"
+    },
+    "SideNav": {
+      "Select_lang": "Seleccionar idioma",
+      "Actions": "Acciones",
+      "Menu": "Menú"
+    },
+    "Title": "Chess CrazyChess",
+    "MenuUser": {
+      "AlertDisable": "Deshabilitar alertas",
+      "AlertEnable": "Habilitar alertas",
+      "Login": "Iniciar sesión"
+    },
+    "Msg": {
+      "Cancel": "Cancelar",
+      "CloseSession": "Cerrar sesión",
+      "confirmLogout": "¿Está seguro que desea cerrar su sesión?",
+      "Exit": "Salir",
+      "Welcome": "Bienvenido {{value}}",
+      "Back": "Anterior",
+      "Next": "Siguiente",
+      "Reset": "Reiniciar"
+    }
+  },
+  "Footer": {
+    "Version": "versión"
+  },
+  "ngxauthfirebaseui": {
+    "emailConfirmationText": "Se le ha enviado un correo electrónico de confirmación.\\n   Revise su bandeja de entrada y haga clic en el enlace \\\"Confirmar mi correo electrónico\\\" para confirmar su dirección de correo electrónico.",
+    "emailConfirmationTitle": "¡Confirme su dirección de correo electrónico!",
+    "emailErrorPatternText": "Por favor, introduce una dirección de correo electrónico válida",
+    "emailErrorRequiredText": "Correo electronico es requerido",
+    "emailText": "Email",
+    "forgotPasswordButtonText": "Se te olvidó tu contraseña?",
+    "guestButtonText": "continua como invitado",
+    "loginButtonText": "Iniciar sesión",
+    "nameErrorMaxLengthText": "¡El nombre es muy largo!",
+    "nameErrorMinLengthText": "¡El nombre es demasiado corto!",
+    "nameErrorRequiredText": "Se requiere el nombre",
+    "nameText": "Nombre",
+    "passwordErrorRequiredText": "se requiere contraseña",
+    "passwordText": "Contraseña",
+    "registerButtonText": "Registro",
+    "registerCardTitleText": "Registro",
+    "registerTabText": "Registro",
+    "resetPasswordActionButtonText": "Reiniciar",
+    "resetPasswordErrorPatternText": "Por favor, introduce una dirección de correo electrónico válida",
+    "resetPasswordErrorRequiredText": "Se requiere un correo electrónico para restablecer la contraseña!",
+    "resetPasswordInputText": "Restablecer la dirección de correo electrónico a la contraseña",
+    "resetPasswordInstructionsText": "Restablecimiento solicitado. Revise sus instrucciones de correo electrónico.",
+    "resetPasswordTabText": "Restablecer la dirección de correo electrónico a la contraseña",
+    "signInCardTitleText": "Iniciando sesión",
+    "signInTabText": "Registrarse"
+  },
+  "pag404": {
+    "Title": "404"
+  },
+  "pagAbout": {
+    "Title": "Sobre nosotros"
+  },
+  "pagHome": {
+    "CreateGame": "Nuevo juego",
+    "GamesInProgress": "Juegos en curso",
+    "JoinGame": "Unirse",
+    "PlayNow": "Jugar ya!",
+    "SeparadorO": "o",
+    "Title": "Inicio",
+    "AbortQuickGame": "Oh no vas a jugar? Te esperamos una proxima vez.",
+    "Completed": "Completo",
+    "Delete": "Eliminar",
+    "GameDelete": "Juego eliminado",
+    "Go": "Ir",
+    "InfoGame": "Más información",
+    "IsNotLogined": "No se puede ejecutar esta acción sin estar loginado",
+    "LastTurn": "Ultimo turno",
+    "NewGameSuccess": "Has creado un juego",
+    "NoRecordsFound": "No existen registros",
+    "Open": "Abrir",
+    "State": "Estado",
+    "Surrender": "Abandonar",
+    "Waiting": "Esperando"
+  },
+  "Game": {
+    "Chess": {
+      "ChessColor": {
+        "BLACK": "Negras",
+        "RAMDOM": "Al azar",
+        "WHITE": "Blancas"
+      },
+      "ColorLabel": "Color",
+      "ColorSelect": "Seleccióne su color",
+      "Title": "Ajedrez",
+      "BlackCheck": "Mueven las negras. Están en jaque!",
+      "BlackTurn": "Mueven las negras",
+      "Check": "Jaque al rey",
+      "Congratulations": "FELICITACIONES",
+      "Draw": "Tablas. Es un empate.",
+      "GameOver": "Se ha terminado la partida",
+      "InCheck": "Tu rey está en jaque!",
+      "Subtitle": "Ajedrez clásico",
+      "Wait": "Tienes que esperar a oponente.",
+      "WhiteCheck": "Mueven las blancas. Están en jaque!",
+      "WhiteTurn": "Mueven las blancas",
+      "YouLost": "Jaque mate. Derrota.",
+      "YouMove": "Es tu turno",
+      "YouWin": "Jaque mate. Victoria."
+    },
+    "Shared": {
+      "ChosseName": "Elija un nombre para esta partida",
+      "ChosseNameHintLabel": "Máximo 15 caracteres",
+      "CreateNewRecuitment": "Crear un nuevo juego",
+      "GameConfig": "Configuración",
+      "GameConfigSummary": "Resumen",
+      "GameDescriptionLabel": "Descripción",
+      "GameDescriptionPlaceHolder": "Opcional: Escriba una descripción",
+      "GameName": "Nombre del juego",
+      "GameNameIsRequired": "El nombre del juego es obligatorio",
+      "SendNewRecruitment": "Enviar",
+      "Defeat": "Derrota",
+      "SendTurn": "Se ha enviado el turno",
+      "Victory": "Victoria"
+    },
+    "Babydontcry": {
+      "Subtitle": "Muevete sin despertarlos.",
+      "Title": "Baby dont cry"
+    },
+    "Chinker": {
+      "Subtitle": "Juego de cartas",
+      "Title": "Chinker"
+    },
+    "Crazychess": {
+      "Subtitle": "Cambiemos las reglas",
+      "Title": "Chess crazy chess"
+    },
+    "Flow": {
+      "Subtitle": "Phaser game",
+      "Title": "Flow"
+    }
+  }
+}

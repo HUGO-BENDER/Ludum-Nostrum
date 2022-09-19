@@ -1,1 +1,9 @@
-<p>login works!</p>
+<div class="loginContainer" fxLayout="row" fxLayoutAlign="center center" >
+  <div fxFlex.lt-sm="90" fxFlex.lt-md="70" fxFlex="50" fxLayout="column" >
+    <ngx-auth-firebaseui
+      [guestEnabled]="true"
+      (onSuccess)="successCallback($event)"
+      (onError)="errorCallback($event)">
+    </ngx-auth-firebaseui>
+  </div>
+</div>

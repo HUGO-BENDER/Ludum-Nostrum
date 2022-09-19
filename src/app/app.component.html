@@ -1,12 +1,12 @@
-<mat-sidenav-container fullscreen>
+<mat-sidenav-container fullscreen >
   <mat-sidenav
     #appsidenav
     mode="over"
-    opened
     class="sidenav"
     [fixedInViewport]="true"
   >
-    <div wireframe-title="SideNav">&nbsp;</div>
+  <app-sidebar></app-sidebar>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <div fxLayout="column" fxFlexFill>

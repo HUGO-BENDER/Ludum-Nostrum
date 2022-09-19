@@ -148,8 +148,8 @@ Step 012
 Step 013
     work in sidenav
     ng generate service services/components/sidenavService
-    -- TODO -- create content for sidebar
-
+    ng g module Contexts/sidebar
+    ng g component Contexts/sidebar/UI/sidebar --skip-tests
 
 Step 014
     FIREBASE !!
@@ -202,28 +202,58 @@ Step 015
     })
 
     Create service MetadataFirebaseProviderService
+    export class MetadataFirebaseProviderService extends MetadataGateway {
+      constructor(public afs: AngularFirestore) {    /*- inyect firebase -*/
+        super();
+      }
 
-
-
+      getAppMetadata(): Promise<Metadata> {     /*-  App.Metadata id defined in DataBase  -*/
+        return this.afs
+          .collection('App')
+          .doc('Metadata')
+          .ref.get()
+          .then(function (d) {
+            return Promise.resolve(<Metadata>d.data());
+          });
+      }
 
 Step 016
+            ngx-auth-firebaseui
+            go to https://ngx-auth-firebaseui.firebaseapp.com/getting-started  and follow the steps. Not icons!
+            //-- already installed    :-/
+            //--    npm install tslib
+            //--    npm i -s @angular/material @angular/cdk
+
+            npm i -s @angular/animations
+            npm i -s firebase @angular/fire
+            edit angular.json
+            npm i -s @angular/forms
+            ng add ngx-auth-firebaseui
+            /*- Temporalmente hay que instalarlo asi -*/   npm install --save  ngx-auth-firebaseui --legacy-peer-deps
+
+
+Step 017
     Module Auth
-    ng g m contexts/auth --routing
+    ng g m Contexts/auth --routing
     ng g c Contexts/auth/login --skip-tests
     config routes
     on click buton in toolbar call login component
 
+    edit auth.module.ts
+    import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+    import { FlexLayoutModule } from '@angular/flex-layout';
 
-Step 016
-      ngx-auth-firebaseui
-      go to https://ngx-auth-firebaseui.firebaseapp.com/getting-started  and follow the steps. Not icons!
-      //-- npm i -s @angular/material @angular/cdk
-      npm i -s @angular/animations
-      npm i -s firebase @angular/fire
-      edit angular.json
-      npm i -s @angular/forms
-      ng add ngx-auth-firebaseui
-
+    edit login.component.html
+    <div class="loginContainer" fxLayout="row" fxLayoutAlign="center center" >
+      <div fxFlex.lt-sm="90" fxFlex.lt-md="70" fxFlex="50" fxLayout="column" >
+        <h2>'App.MenuUser.Login'</h2>
+        <ngx-auth-firebaseui
+          [guestEnabled]="true"
+          (onSuccess)="successCallback($event)"
+          (onError)="errorCallback($event)">
+        </ngx-auth-firebaseui>
+      </div>
+    </div>
 
 
 

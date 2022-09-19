@@ -6,16 +6,9 @@
         "App.Title"
       </span>
     </div>
-
-    <!-- <div *ngIf="user | async; let user; else loguearse;" class="toolbar-inline">
-      <ngx-auth-firebaseui-avatar
-      (onSignOut)="logout()"></ngx-auth-firebaseui-avatar>
-    </div>
-    <ng-template #loguearse> -->
-        <h3 class="textlogin" fxHide.lt-sm="true" (click)="login()">'App.MenuUser.Login'</h3>
-        <button mat-mini-fab color="primary" (click)="login()">
+        <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">'App.MenuUser.Login'</h3>
+        <button mat-mini-fab color="primary" (click)="goToAuth()">
           <mat-icon class="iconlogin">how_to_reg</mat-icon>
         </button>
-    <!-- </ng-template> -->
   </mat-toolbar-row>
 </mat-toolbar>

@@ -1,5 +1,7 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
+
+import { SidebarComponent } from './Contexts/sidebar/UI/sidebar.component';
 import { SidenavService } from './share/services/sidenav.service';
 
 
