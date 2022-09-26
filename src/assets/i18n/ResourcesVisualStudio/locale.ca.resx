@@ -279,24 +279,6 @@
   <data name="App.Msg.Reset" xml:space="preserve">
     <value>reiniciar</value>
   </data>
-  <data name="Game.Chess.ChessColor.BLACK" xml:space="preserve">
-    <value>negres</value>
-  </data>
-  <data name="Game.Chess.ChessColor.RAMDOM" xml:space="preserve">
-    <value>a l'atzar</value>
-  </data>
-  <data name="Game.Chess.ChessColor.WHITE" xml:space="preserve">
-    <value>blanques</value>
-  </data>
-  <data name="Game.Chess.ColorLabel" xml:space="preserve">
-    <value>color</value>
-  </data>
-  <data name="Game.Chess.ColorSelect" xml:space="preserve">
-    <value>Seleccioni el seu color</value>
-  </data>
-  <data name="Game.Chess.Title" xml:space="preserve">
-    <value>Escacs</value>
-  </data>
   <data name="Game.Shared.ChosseName" xml:space="preserve">
     <value>Tria un nom per a aquesta partida</value>
   </data>
@@ -327,44 +309,14 @@
   <data name="Game.Shared.SendNewRecruitment" xml:space="preserve">
     <value>Enviar</value>
   </data>
-  <data name="Game.Chess.BlackCheck" xml:space="preserve">
-    <value>Mouen les negres. Estan en escac!</value>
+  <data name="jumbotron.Linea3" xml:space="preserve">
+    <value>i</value>
   </data>
-  <data name="Game.Chess.BlackTurn" xml:space="preserve">
-    <value>Mouen les negres</value>
+  <data name="jumbotron.Linea2" xml:space="preserve">
+    <value>i els faré amb</value>
   </data>
-  <data name="Game.Chess.Check" xml:space="preserve">
-    <value>Escac al rei</value>
-  </data>
-  <data name="Game.Chess.Congratulations" xml:space="preserve">
-    <value>FELICITACIONS</value>
-  </data>
-  <data name="Game.Chess.Draw" xml:space="preserve">
-    <value>Taules. És un empat.</value>
-  </data>
-  <data name="Game.Chess.GameOver" xml:space="preserve">
-    <value>S'ha acabat la partida</value>
-  </data>
-  <data name="Game.Chess.InCheck" xml:space="preserve">
-    <value>El teu rei està en escac!</value>
-  </data>
-  <data name="Game.Chess.Wait" xml:space="preserve">
-    <value>Has d'esperar a oponent.</value>
-  </data>
-  <data name="Game.Chess.WhiteCheck" xml:space="preserve">
-    <value>Mouen les blanques. Estan en escac!</value>
-  </data>
-  <data name="Game.Chess.WhiteTurn" xml:space="preserve">
-    <value>Mouen les blanques</value>
-  </data>
-  <data name="Game.Chess.YouLost" xml:space="preserve">
-    <value>Escac i mat. Derrota.</value>
-  </data>
-  <data name="Game.Chess.YouMove" xml:space="preserve">
-    <value>És el teu torn</value>
-  </data>
-  <data name="Game.Chess.YouWin" xml:space="preserve">
-    <value>Escac i mat. Victòria.</value>
+  <data name="jumbotron.Linea1" xml:space="preserve">
+    <value>Crearé els meus propis jocs!</value>
   </data>
   <data name="Game.Shared.Defeat" xml:space="preserve">
     <value>derrota</value>
@@ -417,31 +369,31 @@
   <data name="pagHome.Waiting" xml:space="preserve">
     <value>esperant</value>
   </data>
-  <data name="Game.Babydontcry.Title" xml:space="preserve">
-    <value>Baby dont cry</value>
+  <data name="Footer.Resources.PressKit" xml:space="preserve">
+    <value>Kit de premsa</value>
   </data>
-  <data name="Game.Chinker.Title" xml:space="preserve">
-    <value>Chinker</value>
+  <data name="Footer.Resources.Listing" xml:space="preserve">
+    <value>Enllaços</value>
   </data>
-  <data name="Game.Crazychess.Title" xml:space="preserve">
-    <value>Chess crazy chess</value>
+  <data name="Footer.Resources.Blog" xml:space="preserve">
+    <value>Blog</value>
   </data>
-  <data name="Game.Flow.Title" xml:space="preserve">
-    <value>Flow</value>
+  <data name="Footer.Resources.Analytics" xml:space="preserve">
+    <value>Ús de dades</value>
   </data>
-  <data name="Game.Babydontcry.Subtitle" xml:space="preserve">
-    <value>Mou-te sense despertar-los.</value>
+  <data name="Footer.Resources.About" xml:space="preserve">
+    <value>Sobre nosaltres</value>
   </data>
-  <data name="Game.Chess.Subtitle" xml:space="preserve">
-    <value>Escacs clàssic</value>
+  <data name="Footer.Resources" xml:space="preserve">
+    <value>Recursos</value>
   </data>
-  <data name="Game.Chinker.Subtitle" xml:space="preserve">
-    <value>Joc de cartes</value>
+  <data name="Footer.Author.Profile" xml:space="preserve">
+    <value>Perfil</value>
   </data>
-  <data name="Game.Crazychess.Subtitle" xml:space="preserve">
-    <value>Canviem les regles</value>
+  <data name="Footer.Author.Contact" xml:space="preserve">
+    <value>Contacte</value>
   </data>
-  <data name="Game.Flow.Subtitle" xml:space="preserve">
-    <value>Phaser game</value>
+  <data name="Footer.Author" xml:space="preserve">
+    <value>Autor</value>
   </data>
 </root>

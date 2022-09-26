@@ -3,10 +3,10 @@
     <app-logo (click)="toggleAppSidenav()"></app-logo>
     <div class="tool-bar-spacer">
       <span fxHide.lt-sm="true" class="fix-center-title">
-        "App.Title"
+        {{ "App.Title"| translate }}
       </span>
     </div>
-        <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">'App.MenuUser.Login'</h3>
+        <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">{{"App.MenuUser.Login" | translate }}</h3>
         <button mat-mini-fab color="primary" (click)="goToAuth()">
           <mat-icon class="iconlogin">how_to_reg</mat-icon>
         </button>

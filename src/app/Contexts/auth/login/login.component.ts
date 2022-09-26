@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthProvider } from 'ngx-auth-firebaseui';
 import { SidenavService } from 'src/app/share/services/sidenav.service';
 
 @Component({
@@ -18,11 +17,6 @@ export class LoginComponent  {
   successCallback(signInSuccessData: any) {
     console.log('login con exito successCallback', signInSuccessData);
     this.sidenavService.toggle();
-
-    // this.translate.get('App.Msg.Welcome', { value: signInSuccessData.displayName }).subscribe((res: string) => {
-    //   this.ShowToastMessage(res);
-    //   this.dialogRef.close();
-    // })
   }
 
 

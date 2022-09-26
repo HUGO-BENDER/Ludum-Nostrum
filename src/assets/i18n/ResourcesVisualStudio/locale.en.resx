@@ -279,24 +279,6 @@
   <data name="App.Msg.Reset" xml:space="preserve">
     <value>Restart</value>
   </data>
-  <data name="Game.Chess.ChessColor.BLACK" xml:space="preserve">
-    <value>Black</value>
-  </data>
-  <data name="Game.Chess.ChessColor.RAMDOM" xml:space="preserve">
-    <value>Random</value>
-  </data>
-  <data name="Game.Chess.ChessColor.WHITE" xml:space="preserve">
-    <value>White</value>
-  </data>
-  <data name="Game.Chess.ColorLabel" xml:space="preserve">
-    <value>Colour</value>
-  </data>
-  <data name="Game.Chess.ColorSelect" xml:space="preserve">
-    <value>Select your color</value>
-  </data>
-  <data name="Game.Chess.Title" xml:space="preserve">
-    <value>Chess</value>
-  </data>
   <data name="Game.Shared.ChosseName" xml:space="preserve">
     <value>Choose a name for this game</value>
   </data>
@@ -327,44 +309,14 @@
   <data name="Game.Shared.SendNewRecruitment" xml:space="preserve">
     <value>Submit</value>
   </data>
-  <data name="Game.Chess.BlackCheck" xml:space="preserve">
-    <value>Black moves. They are in check!</value>
+  <data name="jumbotron.Linea3" xml:space="preserve">
+    <value>Y</value>
   </data>
-  <data name="Game.Chess.BlackTurn" xml:space="preserve">
-    <value>Black moves</value>
+  <data name="jumbotron.Linea2" xml:space="preserve">
+    <value>and i will do them with</value>
   </data>
-  <data name="Game.Chess.Check" xml:space="preserve">
-    <value>Check the king</value>
-  </data>
-  <data name="Game.Chess.Congratulations" xml:space="preserve">
-    <value>CONGRATULATIONS</value>
-  </data>
-  <data name="Game.Chess.Draw" xml:space="preserve">
-    <value>Boards. It's a tie.</value>
-  </data>
-  <data name="Game.Chess.GameOver" xml:space="preserve">
-    <value>The game is over</value>
-  </data>
-  <data name="Game.Chess.InCheck" xml:space="preserve">
-    <value>Your king is in check!</value>
-  </data>
-  <data name="Game.Chess.Wait" xml:space="preserve">
-    <value>You have to wait for opponent.</value>
-  </data>
-  <data name="Game.Chess.WhiteCheck" xml:space="preserve">
-    <value>White moves. They are in check!</value>
-  </data>
-  <data name="Game.Chess.WhiteTurn" xml:space="preserve">
-    <value>White moves</value>
-  </data>
-  <data name="Game.Chess.YouLost" xml:space="preserve">
-    <value>Checkmate. Defeat.</value>
-  </data>
-  <data name="Game.Chess.YouMove" xml:space="preserve">
-    <value>It's your turn</value>
-  </data>
-  <data name="Game.Chess.YouWin" xml:space="preserve">
-    <value>Checkmate. Victory.</value>
+  <data name="jumbotron.Linea1" xml:space="preserve">
+    <value>I'm going to create my own games!</value>
   </data>
   <data name="Game.Shared.Defeat" xml:space="preserve">
     <value>Defeat</value>
@@ -417,31 +369,31 @@
   <data name="pagHome.Waiting" xml:space="preserve">
     <value>Waiting</value>
   </data>
-  <data name="Game.Babydontcry.Title" xml:space="preserve">
-    <value>Baby dont cry</value>
+  <data name="Footer.Resources.PressKit" xml:space="preserve">
+    <value>press kit</value>
   </data>
-  <data name="Game.Chinker.Title" xml:space="preserve">
-    <value>Chinker</value>
+  <data name="Footer.Resources.Listing" xml:space="preserve">
+    <value>Links</value>
   </data>
-  <data name="Game.Crazychess.Title" xml:space="preserve">
-    <value>Chess crazy chess</value>
+  <data name="Footer.Resources.Blog" xml:space="preserve">
+    <value>Blog</value>
   </data>
-  <data name="Game.Flow.Title" xml:space="preserve">
-    <value>Flow</value>
+  <data name="Footer.Resources.Analytics" xml:space="preserve">
+    <value>data usage</value>
   </data>
-  <data name="Game.Babydontcry.Subtitle" xml:space="preserve">
-    <value>Move without waking them.</value>
+  <data name="Footer.Resources.About" xml:space="preserve">
+    <value>About us</value>
   </data>
-  <data name="Game.Chess.Subtitle" xml:space="preserve">
-    <value>Classic chess</value>
+  <data name="Footer.Resources" xml:space="preserve">
+    <value>Means</value>
   </data>
-  <data name="Game.Chinker.Subtitle" xml:space="preserve">
-    <value>Card game</value>
+  <data name="Footer.Author.Profile" xml:space="preserve">
+    <value>Profile</value>
   </data>
-  <data name="Game.Crazychess.Subtitle" xml:space="preserve">
-    <value>Let's change the rules</value>
+  <data name="Footer.Author.Contact" xml:space="preserve">
+    <value>Contact</value>
   </data>
-  <data name="Game.Flow.Subtitle" xml:space="preserve">
-    <value>Phaser game</value>
+  <data name="Footer.Author" xml:space="preserve">
+    <value>Author</value>
   </data>
 </root>

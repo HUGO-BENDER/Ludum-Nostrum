@@ -6,21 +6,22 @@ import { SidenavService } from 'src/app/share/services/sidenav.service';
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.less']
+  styleUrls: ['./toolbar.component.less'],
 })
 export class ToolbarComponent implements OnInit {
-
-  constructor( private sidenavService: SidenavService, private router: Router ) { }
+  constructor(
+    private sidenavService: SidenavService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
   }
 
-  goToAuth(){
+  goToAuth() {
     this.router.navigate(['/auth']);
   }
 
-  toggleAppSidenav(){
+  toggleAppSidenav() {
     this.sidenavService.toggle();
   }
-
 }

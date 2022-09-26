@@ -226,11 +226,13 @@ Step 016
 
             npm i -s @angular/animations
             npm i -s firebase @angular/fire
-            edit angular.json
+            NOT EDIT angular.json !!!! Copy the assets
+              copy mdi and user directory and all the *.svgs
+
             npm i -s @angular/forms
             ng add ngx-auth-firebaseui
-            /*- Temporalmente hay que instalarlo asi -*/   npm install --save  ngx-auth-firebaseui --legacy-peer-deps
-
+            /*- Temporalmente hay que instalarlo asi -*/   npm install --save  ngx-auth-firebaseui
+            for use guards in routing see https://github.com/AnthonyNahas/ngx-auth-firebaseui
 
 Step 017
     Module Auth
@@ -248,6 +250,31 @@ Step 017
       <div fxFlex.lt-sm="90" fxFlex.lt-md="70" fxFlex="50" fxLayout="column" >
         <h2>'App.MenuUser.Login'</h2>
         <ngx-auth-firebaseui
+          [signInTabText]="'ngxauthfirebaseui.signInTabText' | translate"
+          [signInCardTitleText]="'ngxauthfirebaseui.signInCardTitleText' | translate"
+          [loginButtonText]="'ngxauthfirebaseui.loginButtonText' | translate"
+          [forgotPasswordButtonText]="'ngxauthfirebaseui.forgotPasswordButtonText' | translate"
+          [nameText]="'ngxauthfirebaseui.nameText' | translate"
+          [nameErrorRequiredText]="'ngxauthfirebaseui.nameErrorRequiredText' | translate"
+          [nameErrorMinLengthText]="'ngxauthfirebaseui.nameErrorMinLengthText' | translate"
+          [nameErrorMaxLengthText]="'ngxauthfirebaseui.nameErrorMaxLengthText' | translate"
+          [emailText]="'ngxauthfirebaseui.emailText' | translate"
+          [emailErrorRequiredText]="'ngxauthfirebaseui.emailErrorRequiredText' | translate"
+          [emailErrorPatternText]="'ngxauthfirebaseui.emailErrorPatternText' | translate"
+          [passwordText]="'ngxauthfirebaseui.passwordText' | translate"
+          [passwordErrorRequiredText]="'ngxauthfirebaseui.passwordErrorRequiredText' | translate"
+          [registerTabText]="'ngxauthfirebaseui.registerTabText' | translate"
+          [registerCardTitleText]="'ngxauthfirebaseui.registerCardTitleText' | translate"
+          [registerButtonText]="'ngxauthfirebaseui.registerButtonText' | translate"
+          [guestButtonText]="'ngxauthfirebaseui.guestButtonText' | translate"
+          [resetPasswordTabText]="'ngxauthfirebaseui.resetPasswordTabText' | translate"
+          [resetPasswordInputText]="'ngxauthfirebaseui.resetPasswordInputText' | translate"
+          [resetPasswordErrorRequiredText]="'ngxauthfirebaseui.resetPasswordErrorRequiredText' | translate"
+          [resetPasswordErrorPatternText]="'ngxauthfirebaseui.resetPasswordErrorPatternText' | translate"
+          [resetPasswordActionButtonText]="'ngxauthfirebaseui.resetPasswordActionButtonText' | translate"
+          [resetPasswordInstructionsText]="'ngxauthfirebaseui.resetPasswordInstructionsText' | translate"
+          [emailConfirmationTitle]="'ngxauthfirebaseui.emailConfirmationTitle' | translate"
+          [emailConfirmationText]="'ngxauthfirebaseui.emailConfirmationText' | translate"
           [guestEnabled]="true"
           (onSuccess)="successCallback($event)"
           (onError)="errorCallback($event)">
@@ -255,7 +282,39 @@ Step 017
       </div>
     </div>
 
+step 018
+    Translations
+    we use ngx-translate.
+    https://github.com/ngx-translate/core
+    https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate
+    npm install @ngx-translate/core @ngx-translate/http-loader      /*--  Important!!!   --legacy-peer-deps -*/
 
+    Initializing the TranslateModule in app.module.ts.
+
+    import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+    import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+    import {HttpClient, HttpClientModule} from '@angular/common/http';
+
+    // required for AOT compilation
+    export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+        return new TranslateHttpLoader(http);
+    }
+
+    imports: [
+        // ngx-translate and the loader module
+        HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
+    ],
+
+     Edit App.component.ts
+
+     import { TranslateService } from '@ngx-translate/core';
 
 
 

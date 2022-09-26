@@ -57,7 +57,9 @@
     "signInTabText": "Sign in"
   },
   "Footer": {
-    "Version": "version"
+    "Version": "version",
+    "Resources": "Means",
+    "Author": "Author"
   },
   "pag404": {
     "Title": "404"
@@ -88,30 +90,6 @@
     "Waiting": "Waiting"
   },
   "Game": {
-    "Chess": {
-      "ChessColor": {
-        "BLACK": "Black",
-        "RAMDOM": "Random",
-        "WHITE": "White"
-      },
-      "ColorLabel": "Colour",
-      "ColorSelect": "Select your color",
-      "Title": "Chess",
-      "BlackCheck": "Black moves. They are in check!",
-      "BlackTurn": "Black moves",
-      "Check": "Check the king",
-      "Congratulations": "CONGRATULATIONS",
-      "Draw": "Draw. It's a tie.",
-      "GameOver": "The game is over",
-      "InCheck": "Your king is in check!",
-      "Wait": "You have to wait for opponent.",
-      "WhiteCheck": "White moves. They are in check!",
-      "WhiteTurn": "White moves",
-      "YouLost": "Checkmate. Defeat.",
-      "YouMove": "It's your turn",
-      "YouWin": "Checkmate. Victory.",
-      "Subtitle": "Classic chess"
-    },
     "Shared": {
       "ChosseName": "Choose a name for this game",
       "ChosseNameHintLabel": "15 characters maximum",
@@ -124,24 +102,13 @@
       "GameNameIsRequired": "The name of the game is mandatory",
       "SendNewRecruitment": "Submit",
       "Defeat": "Defeat",
-      "SendTurn": "Turn has been sent",
+      "SendTurn": "Shift has been sent",
       "Victory": "Victory"
-    },
-    "Babydontcry": {
-      "Title": "Baby dont cry",
-      "Subtitle": "Move without waking them."
-    },
-    "Chinker": {
-      "Title": "Chinker",
-      "Subtitle": "Card game"
-    },
-    "Crazychess": {
-      "Title": "Chess crazy chess",
-      "Subtitle": "Let's change the rules"
-    },
-    "Flow": {
-      "Title": "Flow",
-      "Subtitle": "Phaser game"
     }
+  },
+  "jumbotron": {
+    "Linea3": "Y",
+    "Linea2": "and i will do them with",
+    "Linea1": "I'm going to create my own games!"
   }
 }

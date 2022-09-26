@@ -12,7 +12,7 @@
       "Actions": "Acciones",
       "Menu": "Menú"
     },
-    "Title": "Chess CrazyChess",
+    "Title": "LUDUM NOSTRUM",
     "MenuUser": {
       "AlertDisable": "Deshabilitar alertas",
       "AlertEnable": "Habilitar alertas",
@@ -30,7 +30,18 @@
     }
   },
   "Footer": {
-    "Version": "versión"
+    "Version": "versión",
+    "Author": {
+      "Contact": "Contacto",
+      "Profile": "Perfil"
+    },
+    "Resources": {
+      "About": "Sobre nosotros",
+      "Analytics": "Uso de datos",
+      "Blog": "Blog",
+      "Listing": "Enlaces",
+      "PressKit": "Kit de prensa"
+    }
   },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "Se le ha enviado un correo electrónico de confirmación.\\n   Revise su bandeja de entrada y haga clic en el enlace \\\"Confirmar mi correo electrónico\\\" para confirmar su dirección de correo electrónico.",
@@ -88,30 +99,6 @@
     "Waiting": "Esperando"
   },
   "Game": {
-    "Chess": {
-      "ChessColor": {
-        "BLACK": "Negras",
-        "RAMDOM": "Al azar",
-        "WHITE": "Blancas"
-      },
-      "ColorLabel": "Color",
-      "ColorSelect": "Seleccióne su color",
-      "Title": "Ajedrez",
-      "BlackCheck": "Mueven las negras. Están en jaque!",
-      "BlackTurn": "Mueven las negras",
-      "Check": "Jaque al rey",
-      "Congratulations": "FELICITACIONES",
-      "Draw": "Tablas. Es un empate.",
-      "GameOver": "Se ha terminado la partida",
-      "InCheck": "Tu rey está en jaque!",
-      "Subtitle": "Ajedrez clásico",
-      "Wait": "Tienes que esperar a oponente.",
-      "WhiteCheck": "Mueven las blancas. Están en jaque!",
-      "WhiteTurn": "Mueven las blancas",
-      "YouLost": "Jaque mate. Derrota.",
-      "YouMove": "Es tu turno",
-      "YouWin": "Jaque mate. Victoria."
-    },
     "Shared": {
       "ChosseName": "Elija un nombre para esta partida",
       "ChosseNameHintLabel": "Máximo 15 caracteres",
@@ -124,24 +111,13 @@
       "GameNameIsRequired": "El nombre del juego es obligatorio",
       "SendNewRecruitment": "Enviar",
       "Defeat": "Derrota",
-      "SendTurn": "Se ha enviado el turno",
+      "SendTurn": "Enviar turno",
       "Victory": "Victoria"
-    },
-    "Babydontcry": {
-      "Subtitle": "Muevete sin despertarlos.",
-      "Title": "Baby dont cry"
-    },
-    "Chinker": {
-      "Subtitle": "Juego de cartas",
-      "Title": "Chinker"
-    },
-    "Crazychess": {
-      "Subtitle": "Cambiemos las reglas",
-      "Title": "Chess crazy chess"
-    },
-    "Flow": {
-      "Subtitle": "Phaser game",
-      "Title": "Flow"
     }
+  },
+  "jumbotron": {
+    "Linea1": "Voy a crear mis propios juegos!",
+    "Linea2": "y los haré con",
+    "Linea3": "y"
   }
 }
