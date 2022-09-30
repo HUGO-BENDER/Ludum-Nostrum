@@ -4,7 +4,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 
 import { TranslateModule } from '@ngx-translate/core';
-import { AppSharedModule } from 'src/app/share/modules/app.shared.module';
+import { MaterialSharedModule } from 'src/app/share/modules/material.shared.module';
 
 import { SidebarComponent } from './UI/sidebar.component';
 
@@ -15,7 +15,7 @@ import { SidebarComponent } from './UI/sidebar.component';
     RouterModule,
     FlexLayoutModule,
     TranslateModule.forChild({}),
-    AppSharedModule,
+    MaterialSharedModule,
   ],
   exports: [SidebarComponent],
 })

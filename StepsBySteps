@@ -73,7 +73,7 @@ Refactor to
 step 008
     ng g c contexts/dashboard/UI/home --skip-tests
     Edit app.routing.module
-    import {HomeComponent} from './contexts/dashboard/UI/home/home.component'
+    import {HomeComponent} from './contexts/dashboard/UI/home/dashboard.component'
     const routes: Routes = [
       {
         path: '**',
@@ -112,7 +112,7 @@ Step 009
       npm i -s @angular/flex-layout @angular/cdk
 
       with this we can make a wireframe design
-      \dashboard\UI\home\home.component.html
+      \dashboard\UI\home\dashboard.component.html
       <div fxLayout='column'>
         <app-jumbotron fxFlex></app-jumbotron>
         <div fxFlex="300px"  wireframe-title="Partidas"></div>
@@ -121,9 +121,20 @@ Step 009
       </div>
 
 Step 010
-  ng g component /contexts/dashboard/UI/toolbar --skip-tests
-  ng g component /contexts/dashboard/UI/jumbotron --skip-tests
-  ng g component /contexts/dashboard/UI/footer  --skip-tests
+
+  ng g component /contexts/toolbar --skip-tests
+  ng g component /contexts/jumbotron --skip-tests
+  ng g component /contexts/footer  --skip-tests
+
+  ng g module /contexts/library
+  ng g component /contexts/library/UI/library --flat --skip-tests
+
+
+  Create empty Shared pages
+  ng g c /share/pages/pageAbout  --skip-tests
+  ng g c /share/pages/pageNotFound  --skip-tests
+  ng g c /share/pages/page-policy-privacy  --skip-tests
+  ng g c /share/pages/page-service-conditions  --skip-tests
 
 Step 011
   Copy from Jumbotron and footer from old projects :-)
@@ -216,6 +227,12 @@ Step 015
             return Promise.resolve(<Metadata>d.data());
           });
       }
+
+      ng g component /contexts/footer/UI/footerBlock --skip-tests
+      ng g component /contexts/footer/UI/footerProfile --skip-tests
+
+
+
 
 Step 016
             ngx-auth-firebaseui
@@ -317,5 +334,18 @@ step 018
      import { TranslateService } from '@ngx-translate/core';
 
 
+
+Step 019
+    Work in library of games
+    Edit \Contexts\dashboard\dashboard.module.ts
+    //-- Modules
+    import { LibraryModule } from './../library/library.module'
+
+    Edit dashboard.html
+    <div fxLayout='column'>
+      <app-jumbotron fxFlex></app-jumbotron>
+      <app-library fxFlex></app-library>
+
+      ng g component /contexts/library/UI/itemCard --skip-tests
 
 

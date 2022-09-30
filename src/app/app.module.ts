@@ -9,24 +9,25 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 // --Ngx-translate
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 // --Modules in App
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppSharedModule } from './share/modules/app.shared.module';
+import { MaterialSharedModule } from './share/modules/material.shared.module';
 import { LogoComponent } from './share/logo/logo.component';
 // --Modules Pages
 import { DashboardModule } from './Contexts/dashboard/dashboard.module';
 import { SidebarModule } from './Contexts/sidebar/sidebar.module';
 
-
 //--- Temporales
 import { FooterModule } from './Contexts/footer/footer.module';
-import { ToolbarComponent } from './Contexts/dashboard/UI/toolbar/toolbar.component';
-
-
+import { ToolbarComponent } from './Contexts/toolbar/toolbar.component';
+import { PageAboutComponent } from './share/pages/page-about/page-about.component';
+import { PageNotFoundComponent } from './share/pages/page-not-found/page-not-found.component';
+import { PagePolicyPrivacyComponent } from './share/pages/page-policy-privacy/page-policy-privacy.component';
+import { PageServiceConditionsComponent } from './share/pages/page-service-conditions/page-service-conditions.component';
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -38,6 +39,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
     ToolbarComponent,
     LogoComponent,
+    PageAboutComponent,
+    PageNotFoundComponent,
+    PagePolicyPrivacyComponent,
+    PageServiceConditionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,13 +54,13 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     NgxAuthFirebaseUIModule.forRoot(environment.firebaseConfig),
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
-      }
-  }),
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
     AppRoutingModule,
-    AppSharedModule,
+    MaterialSharedModule,
     DashboardModule,
     SidebarModule,
     FooterModule,

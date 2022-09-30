@@ -1,0 +1,12 @@
+<mat-divider></mat-divider>
+<div style="border: 1px solid yellow;"
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px"
+>
+  <div fxFlex="20" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let item of library" style="border: 1px solid white;">
+    {{ item }}
+    <app-item-card [item] = item></app-item-card>
+  </div>
+</div>

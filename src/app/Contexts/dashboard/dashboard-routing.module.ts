@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './UI/home.component';
+import { DashboardComponent } from './UI/dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: '**', component: HomeComponent },
+      { path: '**', component: DashboardComponent },
     ]
   }
 ];
-
 
 @NgModule({
   imports: [

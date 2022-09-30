@@ -1,6 +1,6 @@
 ﻿{
   "App": {
-    "Title": "Chess CrazyChess",
+    "Title": "Ludum Nostrum",
     "Languages": {
       "Catalan": "Catalan",
       "English": "Anglais",
@@ -107,7 +107,7 @@
     }
   },
   "jumbotron": {
-    "Linea3": "Oui",
+    "Linea3": "et",
     "Linea2": "et je les ferai avec",
     "Linea1": "Je vais créer mes propres jeux !"
   }

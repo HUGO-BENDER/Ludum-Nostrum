@@ -4,9 +4,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 // --Translate
 import { TranslateModule } from '@ngx-translate/core';
 
+//-- Modules
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { HomeComponent } from './UI/home.component';
-import { JumbotronComponent } from './UI/jumbotron/jumbotron.component';
+import { LibraryModule } from './../library/library.module'
+
+//-- Components
+import { DashboardComponent } from './UI/dashboard.component';
+import { JumbotronComponent } from './../jumbotron/jumbotron.component';
 
 @NgModule({
   imports: [
@@ -14,9 +18,10 @@ import { JumbotronComponent } from './UI/jumbotron/jumbotron.component';
     FlexLayoutModule,
     TranslateModule.forChild({}),
     DashboardRoutingModule,
+    LibraryModule
   ],
-  declarations: [HomeComponent, JumbotronComponent],
-  exports: [HomeComponent],
+  declarations: [DashboardComponent, JumbotronComponent],
+  exports: [DashboardComponent],
   providers: [],
 })
 export class DashboardModule {}
