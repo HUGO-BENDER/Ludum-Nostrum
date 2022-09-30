@@ -126,8 +126,8 @@ Step 010
   ng g component /contexts/jumbotron --skip-tests
   ng g component /contexts/footer  --skip-tests
 
-  ng g module /contexts/library
-  ng g component /contexts/library/UI/library --flat --skip-tests
+  ng g module /contexts/items-library
+  ng g component /contexts/items-library/UI/items-library --flat --skip-tests
 
 
   Create empty Shared pages
@@ -336,16 +336,25 @@ step 018
 
 
 Step 019
-    Work in library of games
+    Work in library of items
     Edit \Contexts\dashboard\dashboard.module.ts
     //-- Modules
-    import { LibraryModule } from './../library/library.module'
+    import { iIemsLibraryModule } from './../items-library/library.module'
 
     Edit dashboard.html
     <div fxLayout='column'>
       <app-jumbotron fxFlex></app-jumbotron>
       <app-library fxFlex></app-library>
 
-      ng g component /contexts/library/UI/itemCard --skip-tests
+      ng g component /contexts/items-library/UI/itemCard --skip-tests
 
 
+
+
+
+
+
+Step 020
+    Refactor footer
+    create interface FooterBlock
+    

@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { MaterialSharedModule } from '../../share/modules/material.shared.module'
-import { LibraryComponent } from './UI/library.component';
+
+import { ItemsLibraryComponent } from './UI/items-library.component';
+import { MaterialSharedModule } from 'src/app/share/modules/material.shared.module';
 import { ItemCardComponent } from './UI/item-card/item-card.component';
+
 
 
 @NgModule({
   declarations: [
-    LibraryComponent,
+    ItemsLibraryComponent,
     ItemCardComponent
   ],
   imports: [
@@ -18,7 +20,7 @@ import { ItemCardComponent } from './UI/item-card/item-card.component';
     FlexLayoutModule
   ],
   exports: [
-    LibraryComponent
+    ItemsLibraryComponent
   ]
 })
-export class LibraryModule { }
+export class ItemsLibraryModule { }
