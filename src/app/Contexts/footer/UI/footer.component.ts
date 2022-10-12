@@ -1,4 +1,4 @@
-import { Metadata } from '../domain/footer-model';
+import { FooterBlock, Metadata } from '../domain/footer-model';
 import { Component, OnInit } from '@angular/core';
 import { FooterUsecaseService } from '../domain/footer-usecase.service';
 
@@ -9,10 +9,12 @@ import { FooterUsecaseService } from '../domain/footer-usecase.service';
 })
 export class FooterComponent implements OnInit {
   infoMetadata!: Promise<Metadata>;
+  linkBlocks!: Promise<FooterBlock[]>;
 
   constructor(private _providerUsercases: FooterUsecaseService) {}
 
   ngOnInit(): void {
     this.infoMetadata = this._providerUsercases.getAppMetadata();
+    this.linkBlocks = this._providerUsercases.getFooterLinks();
   }
 }

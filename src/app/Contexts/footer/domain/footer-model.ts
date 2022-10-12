@@ -9,14 +9,14 @@ export interface Metadata {
 
 export interface FooterBlock {
   id: string;
-  resourceTitle: string;
+  resourceToolTip: string;
   links: FooterLink[];
 }
 
 export interface FooterLink {
   id: string;
   href?: string;
-  routerLink? : string;
-  resourceTitle: string;
+  routerLink?: string;
+  resourceToolTip: string;
   resourceText: string;
 }

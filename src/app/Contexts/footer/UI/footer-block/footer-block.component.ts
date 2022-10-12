@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FooterBlock } from '../../domain/footer-model';
 
 @Component({
   selector: 'app-footer-block',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class FooterBlockComponent implements OnInit {
 
 
-  @Input() block!: any;
+  @Input() block!: FooterBlock;
 
 
   constructor() { }

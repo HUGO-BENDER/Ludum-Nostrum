@@ -23,103 +23,81 @@ export class FooterHardcodeProviderService extends FooterGateway {
   }
 
   getFooterLinks(): Promise<FooterBlock[]> {
-
     const blockLearnig: FooterBlock = {
       id: 'learning',
-      resourceTitle: 'Learning',
-      links: []
+      resourceToolTip: 'Learning',
+      links: [],
     };
     const blockResources: FooterBlock = {
       id: 'resources',
-      resourceTitle: 'Resources',
-      links: []
+      resourceToolTip: 'Resources',
+      links: [],
     };
     const blockAboutUs: FooterBlock = {
       id: 'AboutUs',
-      resourceTitle: 'AboutUs',
-      links: []
+      resourceToolTip: 'AboutUs',
+      links: [],
     };
     //------------------------------------
-    blockLearnig.links.push(
-      {
-        id: 'GIT',
-        href: 'https://github.com/HUGO-BENDER/Ludum-Nostrum.git',
-        resourceTitle: 'repository',
-        resourceText: 'githubRepository'
-      }
-    )
-    blockLearnig.links.push(
-      {
-        id: 'DDD',
-        routerLink: 'ddd',
-        resourceTitle: 'DDDTitle',
-        resourceText: 'DDDText'
-      }
-    )
+    blockLearnig.links.push({
+      id: 'GIT',
+      href: 'https://github.com/HUGO-BENDER/Ludum-Nostrum.git',
+      resourceToolTip: 'repository',
+      resourceText: 'githubRepository',
+    });
+    blockLearnig.links.push({
+      id: 'DDD',
+      routerLink: 'ddd',
+      resourceToolTip: 'DDDTitle',
+      resourceText: 'DDDText',
+    });
     //--------------------------
-    blockResources.links.push(
-      {
-        id: 'presskit',
-        routerLink: 'presskit',
-        resourceTitle: 'presskitTitle',
-        resourceText: 'presskitText'
-      }
-    )
-    blockResources.links.push(
-      {
-        id: 'blog',
-        href: 'https://blog.angular.io/',
-        resourceTitle: 'blogTitle',
-        resourceText: 'blogText'
-      }
-    )
-    blockResources.links.push(
-      {
-        id: 'analytics',
-        routerLink: 'analytics',
-        resourceTitle: 'analyticsTitle',
-        resourceText: 'analyticsText'
-      }
-    )
+    blockResources.links.push({
+      id: 'presskit',
+      routerLink: 'presskit',
+      resourceToolTip: 'presskitTitle',
+      resourceText: 'presskitText',
+    });
+    blockResources.links.push({
+      id: 'blog',
+      href: 'https://blog.angular.io/',
+      resourceToolTip: 'blogTitle',
+      resourceText: 'blogText',
+    });
+    blockResources.links.push({
+      id: 'analytics',
+      routerLink: 'analytics',
+      resourceToolTip: 'analyticsTitle',
+      resourceText: 'analyticsText',
+    });
 
     //--------------------------
-    blockAboutUs.links.push(
-      {
-        id: 'aboutUs',
-        routerLink: 'page-about',
-        resourceTitle: 'aboutTitle',
-        resourceText: 'aboutText'
-      }
-    )
-    blockAboutUs.links.push(
-      {
-        id: 'contributors',
-        routerLink: 'page-contributors',
-        resourceTitle: 'contributorsTitle',
-        resourceText: 'contributorsText'
-      }
-    )
+    blockAboutUs.links.push({
+      id: 'aboutUs',
+      routerLink: 'page-about',
+      resourceToolTip: 'aboutTitle',
+      resourceText: 'aboutText',
+    });
+    blockAboutUs.links.push({
+      id: 'contributors',
+      routerLink: 'page-contributors',
+      resourceToolTip: 'contributorsTitle',
+      resourceText: 'contributorsText',
+    });
     // blockxxx.links.push(
     //   {
     //     id: '',
     //     href: '',
     //     routerLink: '',
-    //     resourceTitle: '',
+    //     resourceToolTip: '',
     //     resourceText: ''
     //   }
     // )
 
-    return Promise.resolve(
-      <FooterBlock[]> [
-        blockLearnig,
-        blockAboutUs,
-        blockResources
-      ]
-    );
+    return Promise.resolve(<FooterBlock[]>[
+      blockLearnig,
+      blockAboutUs,
+      blockResources,
+    ]);
   }
-
-
-
-
-
 }

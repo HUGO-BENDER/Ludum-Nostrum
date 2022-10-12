@@ -12,27 +12,50 @@
       "Actions": "Accións",
       "Menu": "Menú"
     },
-    "Title": "Ludum Nostrum",
-    "MenuUser": {
-      "AlertDisable": "Desactivar as alertas",
-      "AlertEnable": "Activar alertas",
-      "Login": "Iniciar sesión"
-    },
-    "Msg": {
-      "Cancel": "Cancelar",
-      "CloseSession": "Pechar sesión",
-      "confirmLogout": "Estás seguro de que queres pechar sesión?",
-      "Exit": "Saír",
-      "Welcome": "Benvido {{value}}",
-      "Back": "Anterior",
-      "Next": "A continuación",
-      "Reset": "Reiniciar"
-    }
+    "_Title": "LUDUM NOSTRUM"
   },
   "Footer": {
     "Version": "versión",
-    "Resources": "Medios",
-    "Author": "Autor"
+    "Blocks": {
+      "Resources": {
+        "Title": "Medios",
+        "Links": {
+          "presskitToolTip": "kit de prensa",
+          "presskitText": "kit de prensa",
+          "blogToolTip": "Blog",
+          "blogText": "Blog",
+          "analyticsToolTip": "uso de datos",
+          "analyticsText": "uso de datos"
+        }
+      },
+      "Profile": {
+        "Title": "Autor",
+        "Profile": "Perfil",
+        "Contact": "Contacto"
+      },
+      "Learning": {
+        "Title": "Aprendizaxe",
+        "Links": {
+          "TestToolTip": "Proba",
+          "TestText": "Proba",
+          "MicroServicesToolTip": "microservizos",
+          "MicroServicesText": "microservizos",
+          "GITTooltip": "Repositorio GIT",
+          "GITText": "GIT",
+          "DDDToolTip": "Arquitectura DDD",
+          "DDDText": "Arquitectura DDD"
+        }
+      },
+      "AboutUs": {
+        "Title": "Sobre nós",
+        "Links": {
+          "contributorsToolTip": "colaboradores",
+          "contributorsText": "colaboradores",
+          "aboutToolTip": "O noso proxecto",
+          "aboutText": "Sobre nós"
+        }
+      }
+    }
   },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "Envioulle un correo electrónico de confirmación. \\ N Comprobe a súa caixa de entrada e faga clic na ligazón \\ \"Confirmar o meu correo electrónico \\\" para confirmar o seu enderezo de correo electrónico.",
@@ -59,52 +82,8 @@
     "resetPasswordInstructionsText": "Restablecido solicitado. Verifique as súas instrucións de correo electrónico.",
     "resetPasswordTabText": "Restablecer o enderezo de correo electrónico ao contrasinal",
     "signInCardTitleText": "Iniciar sesión",
-    "signInTabText": "Rexístrate"
-  },
-  "pag404": {
-    "Title": "404"
-  },
-  "pagAbout": {
-    "Title": "Sobre nós"
-  },
-  "pagHome": {
-    "CreateGame": "Novo xogo",
-    "GamesInProgress": "Xogos en marcha",
-    "JoinGame": "A unirse",
-    "SeparadorO": "ou",
-    "PlayNow": "Xoga agora!",
-    "Title": "Inicio",
-    "AbortQuickGame": "Ah, non xogará? Agardámoste a próxima vez.",
-    "Completed": "Completo",
-    "Delete": "Elimina",
-    "GameDelete": "Xogo eliminado",
-    "Go": "Vaia",
-    "InfoGame": "Máis información",
-    "IsNotLogined": "Non podes executar esta acción sen estar rexistrado",
-    "LastTurn": "Última quenda",
-    "NewGameSuccess": "Creou un xogo",
-    "NoRecordsFound": "Non hai rexistros",
-    "Open": "Aberto",
-    "State": "Estado",
-    "Surrender": "Abandonar",
-    "Waiting": "Agardando"
-  },
-  "Game": {
-    "Shared": {
-      "ChosseName": "Escolla un nome para este xogo",
-      "ChosseNameHintLabel": "15 caracteres como máximo",
-      "CreateNewRecuitment": "Crea un xogo novo",
-      "GameConfig": "Configuración",
-      "GameConfigSummary": "Resumo",
-      "GameDescriptionLabel": "Descrición",
-      "GameDescriptionPlaceHolder": "Opcional: Introduza unha descrición",
-      "GameName": "Nome do xogo",
-      "GameNameIsRequired": "O nome do xogo é obrigatorio",
-      "SendNewRecruitment": "Enviar",
-      "Defeat": "Derrota",
-      "SendTurn": "O cambio foi enviado",
-      "Victory": "Victoria"
-    }
+    "signInTabText": "Rexístrate",
+    "messageOnAuthSuccess": "Benvido"
   },
   "jumbotron": {
     "Linea3": "Y",

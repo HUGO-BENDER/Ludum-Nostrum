@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer-profile',
   templateUrl: './footer-profile.component.html',
   styleUrls: ['./footer-profile.component.less']
 })
-export class FooterProfileComponent implements OnInit {
-
+export class FooterProfileComponent  {
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

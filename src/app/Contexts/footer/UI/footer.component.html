@@ -1,26 +1,15 @@
-<footer fxLayout="column" class="withObliqueLateral">
-  <div  fxFlexOffset="20px" fxLayout="row wrap"  fxLayoutAlign="space-between start" fxLayoutGap="20">
-
-    <div fxFlex="20" wireframe-title="item" >
-      <app-footer-block></app-footer-block>
+<footer fxLayout="column" class="withObliqueLateral marginLeft-5">
+  <div  fxLayout="row wrap"
+        fxLayout.xs="column"
+        fxLayoutAlign="space-between start"
+        fxFlexOffset="20px"
+        fxLayoutGap="20"
+        >
+    <div *ngFor="let block of linkBlocks | async" fxFlex="20" fxFlex.sm="40" >
+      <app-footer-block [block]= block></app-footer-block>
     </div>
-    <div fxFlex="20" wireframe-title="item">
-      <app-footer-block></app-footer-block>
-    </div>
-    <div fxFlex="20" wireframe-title="item">
-      <app-footer-block></app-footer-block>
-    </div>
-    <div fxFlex="20">
-      <div fxLayout="column" fxLayoutAlign="center center">
-        <div class="footer-block-heading">"footer.author"</div>
-        <div class="profile-author-picture"></div>
-        <br>
-        <div>"footer.author.profile"</div>
-        <div>{{(infoMetadata | async)?.author}}</div>
-        <div>Developer</div>
-        <div>"footer.author.contact"</div>
-        <div><span>benderhugo@gmail.com</span></div>
-      </div>
+    <div fxFlex="20" fxFlex.sm="50" >
+      <app-footer-profile></app-footer-profile>
     </div>
   </div>
   <div fxLayout="column" fxLayoutAlign="center center">

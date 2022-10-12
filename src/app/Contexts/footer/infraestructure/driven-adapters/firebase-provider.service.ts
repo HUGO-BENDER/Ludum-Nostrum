@@ -24,98 +24,93 @@ export class FooterFirebaseProviderService extends FooterGateway {
   }
 
   getFooterLinks(): Promise<FooterBlock[]> {
-
     const blockLearnig: FooterBlock = {
-      id: 'learning',
-      resourceTitle: 'Learning',
-      links: []
+      id: 'Learning',
+      resourceToolTip: 'Learning',
+      links: [],
     };
     const blockResources: FooterBlock = {
-      id: 'resources',
-      resourceTitle: 'Resources',
-      links: []
+      id: 'Resources',
+      resourceToolTip: 'Resources',
+      links: [],
     };
     const blockAboutUs: FooterBlock = {
       id: 'AboutUs',
-      resourceTitle: 'AboutUs',
-      links: []
+      resourceToolTip: 'AboutUs',
+      links: [],
     };
     //------------------------------------
-    blockLearnig.links.push(
-      {
-        id: 'GIT',
-        href: 'https://github.com/HUGO-BENDER/Ludum-Nostrum.git',
-        resourceTitle: 'repository',
-        resourceText: 'githubRepository'
-      }
-    )
-    blockLearnig.links.push(
-      {
-        id: 'DDD',
-        routerLink: 'ddd',
-        resourceTitle: 'DDDTitle',
-        resourceText: 'DDDText'
-      }
-    )
+    blockLearnig.links.push({
+      id: 'GIT',
+      href: 'https://github.com/HUGO-BENDER/Ludum-Nostrum.git',
+      resourceToolTip: 'GITTooltip',
+      resourceText: 'GITText',
+    });
+    blockLearnig.links.push({
+      id: 'DDD',
+      routerLink: 'ddd',
+      resourceToolTip: 'DDDToolTip',
+      resourceText: 'DDDText',
+    });
+    blockLearnig.links.push({
+      id: 'MicroServices',
+      routerLink: 'MicroServices',
+      resourceToolTip: 'MicroServicesToolTip',
+      resourceText: 'MicroServicesText',
+    });
+    blockLearnig.links.push({
+      id: 'Testing',
+      routerLink: 'Test',
+      resourceToolTip: 'TestToolTip',
+      resourceText: 'TestText',
+    });
     //--------------------------
-    blockResources.links.push(
-      {
-        id: 'presskit',
-        routerLink: 'presskit',
-        resourceTitle: 'presskitTitle',
-        resourceText: 'presskitText'
-      }
-    )
-    blockResources.links.push(
-      {
-        id: 'blog',
-        href: 'https://blog.angular.io/',
-        resourceTitle: 'blogTitle',
-        resourceText: 'blogText'
-      }
-    )
-    blockResources.links.push(
-      {
-        id: 'analytics',
-        routerLink: 'analytics',
-        resourceTitle: 'analyticsTitle',
-        resourceText: 'analyticsText'
-      }
-    )
+    blockResources.links.push({
+      id: 'presskit',
+      routerLink: 'presskit',
+      resourceToolTip: 'presskitToolTip',
+      resourceText: 'presskitText',
+    });
+    blockResources.links.push({
+      id: 'blog',
+      href: 'https://blog.angular.io/',
+      resourceToolTip: 'blogToolTip',
+      resourceText: 'blogText',
+    });
+    blockResources.links.push({
+      id: 'analytics',
+      routerLink: 'analytics',
+      resourceToolTip: 'analyticsToolTip',
+      resourceText: 'analyticsText',
+    });
 
     //--------------------------
-    blockAboutUs.links.push(
-      {
-        id: 'aboutUs',
-        routerLink: 'page-about',
-        resourceTitle: 'aboutTitle',
-        resourceText: 'aboutText'
-      }
-    )
-    blockAboutUs.links.push(
-      {
-        id: 'contributors',
-        routerLink: 'page-contributors',
-        resourceTitle: 'contributorsTitle',
-        resourceText: 'contributorsText'
-      }
-    )
+    blockAboutUs.links.push({
+      id: 'aboutUs',
+      routerLink: 'page-about',
+      resourceToolTip: 'aboutToolTip',
+      resourceText: 'aboutText',
+    });
+    blockAboutUs.links.push({
+      id: 'contributors',
+      routerLink: 'page-contributors',
+      resourceToolTip: 'contributorsToolTip',
+      resourceText: 'contributorsText',
+    });
     // blockxxx.links.push(
     //   {
     //     id: '',
     //     href: '',
     //     routerLink: '',
-    //     resourceTitle: '',
+    //     resourceToolTip: '',
     //     resourceText: ''
     //   }
     // )
 
-    return Promise.resolve(
-      <FooterBlock[]> [
-        blockLearnig,
-        blockAboutUs,
-        blockResources
-      ]
-    );
+    return Promise.resolve(<FooterBlock[]>[
+      blockLearnig,
+      blockAboutUs,
+      blockResources,
+    ]);
   }
 }

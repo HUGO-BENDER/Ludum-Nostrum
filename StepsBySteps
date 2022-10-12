@@ -126,9 +126,15 @@ Step 010
   ng g component /contexts/jumbotron --skip-tests
   ng g component /contexts/footer  --skip-tests
 
-  ng g module /contexts/items-library
-  ng g component /contexts/items-library/UI/items-library --flat --skip-tests
+  ng g module /contexts/products
+  ng g class /contexts/products/domain/product-model  --skip-tests
+  ng g class /contexts/products/domain/product-gateway  --skip-tests
+  ng g service /contexts/products/domain/product-usecase  --skip-tests
 
+  ng g service /contexts/products/infraestructure/driven-adapters/firebase-provider  --skip-tests
+  ng g service /contexts/products/infraestructure/driven-adapters/hardcode-provider  --skip-tests
+
+  ng g component /contexts/products/UI/products --flat --skip-tests
 
   Create empty Shared pages
   ng g c /share/pages/pageAbout  --skip-tests
@@ -336,7 +342,54 @@ step 018
 
 
 Step 019
-    Work in library of items
+    Refactor toolbar. Inject Auth
+    export class ToolbarComponent {
+      user: Observable<firebase.User | null>;
+    constructor( .... , private au: AngularFireAuth ) {
+      this.user = this.au.authState;
+    }
+
+    Add imports
+    import { AngularFireAuth } from '@angular/fire/compat/auth';
+    import { Observable } from 'rxjs';
+    import firebase from 'firebase/compat/app';
+
+    <div *ngIf="user | async; let user; else: loguearse" fxLayout="row">
+      <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">
+        {{ user.displayName }}
+      </h3>
+      <ngx-auth-firebaseui-avatar></ngx-auth-firebaseui-avatar>
+    </div>
+    <ng-template #loguearse>
+      <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">
+        {{ "ngxauthfirebaseui.loginButtonText" | translate }}
+      </h3>
+      <button mat-mini-fab color="primary" (click)="goToAuth()">
+        <mat-icon class="iconlogin">how_to_reg</mat-icon>
+      </button>
+    </ng-template>
+
+
+Step 020
+        Refactor footer
+        create interface FooterBlock
+        create component footer-block
+        create component footer-profile
+        Edit footer.component.html
+        <div  fxFlexOffset="20px" fxLayout="row wrap"  fxLayoutAlign="space-between start" fxLayoutGap="20">
+          <div fxFlex="5"></div>
+          <div *ngFor="let block of linkBlocks | async" fxFlex="20" >
+            <app-footer-block [block]= block></app-footer-block>
+          </div>
+          <div fxFlex="20">
+            <app-footer-profile></app-footer-profile>
+          </div>
+        </div>
+
+        Create all data and tranlations
+
+Step 021
+    Work in products
     Edit \Contexts\dashboard\dashboard.module.ts
     //-- Modules
     import { iIemsLibraryModule } from './../items-library/library.module'
@@ -344,17 +397,21 @@ Step 019
     Edit dashboard.html
     <div fxLayout='column'>
       <app-jumbotron fxFlex></app-jumbotron>
-      <app-library fxFlex></app-library>
+      <app-items-library fxFlex="40vh" fxFlex.sm="80vh" class="dashboardRow"></app-items-library>
 
-      ng g component /contexts/items-library/UI/itemCard --skip-tests
-
-
-
+      ng g component /contexts/products/UI/product-card --skip-tests
+      make simple card
 
 
 
 
-Step 020
-    Refactor footer
-    create interface FooterBlock
-    
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 // --Translate
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -12,7 +13,7 @@ import { FooterProfileComponent } from './UI/footer-profile/footer-profile.compo
 // import { HardcodeProviderService } from './infraestructure/driven-adapters/hardcode-provider.service';
 
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule, TranslateModule.forChild({})],
+  imports: [CommonModule, FlexLayoutModule, RouterModule, TranslateModule.forChild({})],
   declarations: [FooterComponent, FooterBlockComponent, FooterProfileComponent],
   exports: [FooterComponent],
   providers: [

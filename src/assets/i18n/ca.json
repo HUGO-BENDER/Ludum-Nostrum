@@ -12,27 +12,50 @@
       "Actions": "accions",
       "Menu": "menú"
     },
-    "Title": "Ludum Nostrum",
-    "MenuUser": {
-      "AlertDisable": "deshabilitar alertes",
-      "AlertEnable": "habilitar alertes",
-      "Login": "Inicia sessió"
-    },
-    "Msg": {
-      "Cancel": "Cancel",
-      "CloseSession": "Tancar sessió",
-      "confirmLogout": "Esteu segur que voleu tancar la seva sessió?",
-      "Exit": "sortir",
-      "Welcome": "Benvingut {{value}}",
-      "Back": "anterior",
-      "Next": "següent",
-      "Reset": "reiniciar"
-    }
+    "_Title": "LUDUM NOSTRUM"
   },
   "Footer": {
     "Version": "versió",
-    "Resources": "Recursos",
-    "Author": "Autor"
+    "Blocks": {
+      "Resources": {
+        "Title": "Recursos",
+        "Links": {
+          "presskitToolTip": "Kit de premsa",
+          "presskitText": "Kit de premsa",
+          "blogToolTip": "Blog",
+          "blogText": "Blog",
+          "analyticsToolTip": "Ús de dades",
+          "analyticsText": "Ús de dades"
+        }
+      },
+      "Profile": {
+        "Title": "Autor",
+        "Profile": "Perfil",
+        "Contact": "Contacte"
+      },
+      "Learning": {
+        "Title": "Aprenent",
+        "Links": {
+          "TestToolTip": "Test",
+          "TestText": "Test",
+          "MicroServicesToolTip": "Micro serveis",
+          "MicroServicesText": "Micro serveis",
+          "GITTooltip": "GIT Repository",
+          "GITText": "GIT",
+          "DDDToolTip": "Arquitectura DDD",
+          "DDDText": "Arquitectura DDD"
+        }
+      },
+      "AboutUs": {
+        "Title": "Sobre nosaltres",
+        "Links": {
+          "contributorsToolTip": "Contribuïdors",
+          "contributorsText": "Contribuïdors",
+          "aboutToolTip": "El nostre projecte",
+          "aboutText": "Sobre nosaltres"
+        }
+      }
+    }
   },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "Se li ha enviat un correu electrònic de confirmació. \\ N Reviseu la safata d'entrada i feu clic a l'enllaç \\ \"Confirma la vostra adreça electrònica \\\" per confirmar la seva adreça de correu electrònic.",
@@ -59,52 +82,8 @@
     "resetPasswordInstructionsText": "Restabliment sol·licitat. Revisi les seves instruccions de correu electrònic.",
     "resetPasswordTabText": "Restablir l'adreça de correu electrònic a la contrasenya",
     "signInCardTitleText": "iniciant sessió",
-    "signInTabText": "Registrar"
-  },
-  "pag404": {
-    "Title": "404"
-  },
-  "pagAbout": {
-    "Title": "sobre nosaltres"
-  },
-  "pagHome": {
-    "CreateGame": "nou joc",
-    "GamesInProgress": "Jocs en curs",
-    "JoinGame": "Unir-se",
-    "SeparadorO": "o",
-    "PlayNow": "Jugar ja!",
-    "Title": "Inici",
-    "AbortQuickGame": "Oh no jugaràs? T'esperem una propera vegada.",
-    "Completed": "complet",
-    "Delete": "eliminar",
-    "GameDelete": "joc eliminat",
-    "Go": "anar",
-    "InfoGame": "més informació",
-    "IsNotLogined": "No es pot executar aquesta acció sense estar loginado",
-    "LastTurn": "darrer torn",
-    "NewGameSuccess": "Has creat un joc",
-    "NoRecordsFound": "No hi ha registres",
-    "Open": "obrir",
-    "State": "estat",
-    "Surrender": "abandonar",
-    "Waiting": "esperant"
-  },
-  "Game": {
-    "Shared": {
-      "ChosseName": "Tria un nom per a aquesta partida",
-      "ChosseNameHintLabel": "Màxim 15 caràcters",
-      "CreateNewRecuitment": "Crear un nou joc",
-      "GameConfig": "configuració",
-      "GameConfigSummary": "Resum",
-      "GameDescriptionLabel": "Descripció",
-      "GameDescriptionPlaceHolder": "Opcional: Escriviu una descripció",
-      "GameName": "Nom del joc",
-      "GameNameIsRequired": "El nom del joc és obligatori",
-      "SendNewRecruitment": "Enviar",
-      "Defeat": "derrota",
-      "SendTurn": "S'ha enviat el torn",
-      "Victory": "victòria"
-    }
+    "signInTabText": "Registrar",
+    "messageOnAuthSuccess": "Benvingut"
   },
   "jumbotron": {
     "Linea3": "i",

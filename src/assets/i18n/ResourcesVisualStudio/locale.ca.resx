@@ -135,33 +135,6 @@
   <data name="App.SideNav.Select_lang" xml:space="preserve">
     <value>seleccionar idioma</value>
   </data>
-  <data name="App.Title" xml:space="preserve">
-    <value>Chess CrazyChess</value>
-  </data>
-  <data name="App.MenuUser.AlertDisable" xml:space="preserve">
-    <value>deshabilitar alertes</value>
-  </data>
-  <data name="App.MenuUser.AlertEnable" xml:space="preserve">
-    <value>habilitar alertes</value>
-  </data>
-  <data name="App.MenuUser.Login" xml:space="preserve">
-    <value>Inicia sessió</value>
-  </data>
-  <data name="App.Msg.Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="App.Msg.CloseSession" xml:space="preserve">
-    <value>Tancar sessió</value>
-  </data>
-  <data name="App.Msg.confirmLogout" xml:space="preserve">
-    <value>Esteu segur que voleu tancar la seva sessió?</value>
-  </data>
-  <data name="App.Msg.Exit" xml:space="preserve">
-    <value>sortir</value>
-  </data>
-  <data name="App.Msg.Welcome" xml:space="preserve">
-    <value>Benvingut {{value}}</value>
-  </data>
   <data name="App.SideNav.Actions" xml:space="preserve">
     <value>accions</value>
   </data>
@@ -246,69 +219,6 @@
   <data name="ngxauthfirebaseui.signInTabText" xml:space="preserve">
     <value>Registrar</value>
   </data>
-  <data name="pag404.Title" xml:space="preserve">
-    <value>404</value>
-  </data>
-  <data name="pagAbout.Title" xml:space="preserve">
-    <value>sobre nosaltres</value>
-  </data>
-  <data name="pagHome.CreateGame" xml:space="preserve">
-    <value>nou joc</value>
-  </data>
-  <data name="pagHome.GamesInProgress" xml:space="preserve">
-    <value>Jocs en curs</value>
-  </data>
-  <data name="pagHome.JoinGame" xml:space="preserve">
-    <value>Unir-se</value>
-  </data>
-  <data name="pagHome.SeparadorO" xml:space="preserve">
-    <value>o</value>
-  </data>
-  <data name="pagHome.PlayNow" xml:space="preserve">
-    <value>Jugar ja!</value>
-  </data>
-  <data name="pagHome.Title" xml:space="preserve">
-    <value>Inici</value>
-  </data>
-  <data name="App.Msg.Back" xml:space="preserve">
-    <value>anterior</value>
-  </data>
-  <data name="App.Msg.Next" xml:space="preserve">
-    <value>següent</value>
-  </data>
-  <data name="App.Msg.Reset" xml:space="preserve">
-    <value>reiniciar</value>
-  </data>
-  <data name="Game.Shared.ChosseName" xml:space="preserve">
-    <value>Tria un nom per a aquesta partida</value>
-  </data>
-  <data name="Game.Shared.ChosseNameHintLabel" xml:space="preserve">
-    <value>Màxim 15 caràcters</value>
-  </data>
-  <data name="Game.Shared.CreateNewRecuitment" xml:space="preserve">
-    <value>Crear un nou joc</value>
-  </data>
-  <data name="Game.Shared.GameConfig" xml:space="preserve">
-    <value>configuració</value>
-  </data>
-  <data name="Game.Shared.GameConfigSummary" xml:space="preserve">
-    <value>Resum</value>
-  </data>
-  <data name="Game.Shared.GameDescriptionLabel" xml:space="preserve">
-    <value>Descripció</value>
-  </data>
-  <data name="Game.Shared.GameDescriptionPlaceHolder" xml:space="preserve">
-    <value>Opcional: Escriviu una descripció</value>
-  </data>
-  <data name="Game.Shared.GameName" xml:space="preserve">
-    <value>Nom del joc</value>
-  </data>
-  <data name="Game.Shared.GameNameIsRequired" xml:space="preserve">
-    <value>El nom del joc és obligatori</value>
-  </data>
-  <data name="Game.Shared.SendNewRecruitment" xml:space="preserve">
-    <value>Enviar</value>
-  </data>
   <data name="jumbotron.Linea3" xml:space="preserve">
     <value>i</value>
   </data>
@@ -318,82 +228,82 @@
   <data name="jumbotron.Linea1" xml:space="preserve">
     <value>Crearé els meus propis jocs!</value>
   </data>
-  <data name="Game.Shared.Defeat" xml:space="preserve">
-    <value>derrota</value>
-  </data>
-  <data name="Game.Shared.SendTurn" xml:space="preserve">
-    <value>S'ha enviat el torn</value>
-  </data>
-  <data name="Game.Shared.Victory" xml:space="preserve">
-    <value>victòria</value>
-  </data>
-  <data name="pagHome.AbortQuickGame" xml:space="preserve">
-    <value>Oh no jugaràs? T'esperem una propera vegada.</value>
-  </data>
-  <data name="pagHome.Completed" xml:space="preserve">
-    <value>complet</value>
-  </data>
-  <data name="pagHome.Delete" xml:space="preserve">
-    <value>eliminar</value>
-  </data>
-  <data name="pagHome.GameDelete" xml:space="preserve">
-    <value>joc eliminat</value>
-  </data>
-  <data name="pagHome.Go" xml:space="preserve">
-    <value>anar</value>
-  </data>
-  <data name="pagHome.InfoGame" xml:space="preserve">
-    <value>més informació</value>
-  </data>
-  <data name="pagHome.IsNotLogined" xml:space="preserve">
-    <value>No es pot executar aquesta acció sense estar loginado</value>
-  </data>
-  <data name="pagHome.LastTurn" xml:space="preserve">
-    <value>darrer torn</value>
-  </data>
-  <data name="pagHome.NewGameSuccess" xml:space="preserve">
-    <value>Has creat un joc</value>
-  </data>
-  <data name="pagHome.NoRecordsFound" xml:space="preserve">
-    <value>No hi ha registres</value>
-  </data>
-  <data name="pagHome.Open" xml:space="preserve">
-    <value>obrir</value>
-  </data>
-  <data name="pagHome.State" xml:space="preserve">
-    <value>estat</value>
-  </data>
-  <data name="pagHome.Surrender" xml:space="preserve">
-    <value>abandonar</value>
-  </data>
-  <data name="pagHome.Waiting" xml:space="preserve">
-    <value>esperant</value>
-  </data>
-  <data name="Footer.Resources.PressKit" xml:space="preserve">
-    <value>Kit de premsa</value>
-  </data>
-  <data name="Footer.Resources.Listing" xml:space="preserve">
-    <value>Enllaços</value>
-  </data>
-  <data name="Footer.Resources.Blog" xml:space="preserve">
-    <value>Blog</value>
-  </data>
-  <data name="Footer.Resources.Analytics" xml:space="preserve">
-    <value>Ús de dades</value>
-  </data>
-  <data name="Footer.Resources.About" xml:space="preserve">
-    <value>Sobre nosaltres</value>
-  </data>
-  <data name="Footer.Resources" xml:space="preserve">
+  <data name="Footer.Blocks.Resources.Title" xml:space="preserve">
     <value>Recursos</value>
   </data>
-  <data name="Footer.Author.Profile" xml:space="preserve">
+  <data name="Footer.Blocks.Resources.Links.presskitToolTip" xml:space="preserve">
+    <value>Kit de premsa</value>
+  </data>
+  <data name="Footer.Blocks.Resources.Links.presskitText" xml:space="preserve">
+    <value>Kit de premsa</value>
+  </data>
+  <data name="Footer.Blocks.Resources.Links.blogToolTip" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Footer.Blocks.Resources.Links.blogText" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Footer.Blocks.Resources.Links.analyticsToolTip" xml:space="preserve">
+    <value>Ús de dades</value>
+  </data>
+  <data name="Footer.Blocks.Resources.Links.analyticsText" xml:space="preserve">
+    <value>Ús de dades</value>
+  </data>
+  <data name="Footer.Blocks.Profile.Title" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="Footer.Blocks.Profile.Profile" xml:space="preserve">
     <value>Perfil</value>
   </data>
-  <data name="Footer.Author.Contact" xml:space="preserve">
+  <data name="Footer.Blocks.Profile.Contact" xml:space="preserve">
     <value>Contacte</value>
   </data>
-  <data name="Footer.Author" xml:space="preserve">
-    <value>Autor</value>
+  <data name="Footer.Blocks.Learning.Title" xml:space="preserve">
+    <value>Aprenent</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.TestToolTip" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.TestText" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.MicroServicesToolTip" xml:space="preserve">
+    <value>Micro serveis</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.MicroServicesText" xml:space="preserve">
+    <value>Micro serveis</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.GITTooltip" xml:space="preserve">
+    <value>GIT Repository</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.GITText" xml:space="preserve">
+    <value>GIT</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.DDDToolTip" xml:space="preserve">
+    <value>Arquitectura DDD</value>
+  </data>
+  <data name="Footer.Blocks.Learning.Links.DDDText" xml:space="preserve">
+    <value>Arquitectura DDD</value>
+  </data>
+  <data name="Footer.Blocks.AboutUs.Title" xml:space="preserve">
+    <value>Sobre nosaltres</value>
+  </data>
+  <data name="Footer.Blocks.AboutUs.Links.contributorsToolTip" xml:space="preserve">
+    <value>Contribuïdors</value>
+  </data>
+  <data name="Footer.Blocks.AboutUs.Links.contributorsText" xml:space="preserve">
+    <value>Contribuïdors</value>
+  </data>
+  <data name="Footer.Blocks.AboutUs.Links.aboutToolTip" xml:space="preserve">
+    <value>El nostre projecte</value>
+  </data>
+  <data name="Footer.Blocks.AboutUs.Links.aboutText" xml:space="preserve">
+    <value>Sobre nosaltres</value>
+  </data>
+  <data name="ngxauthfirebaseui.messageOnAuthSuccess" xml:space="preserve">
+    <value>Benvingut</value>
+  </data>
+  <data name="App._Title" xml:space="preserve">
+    <value>LUDUM NOSTRUM</value>
   </data>
 </root>

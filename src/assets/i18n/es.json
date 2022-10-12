@@ -12,36 +12,7 @@
       "Actions": "Acciones",
       "Menu": "Menú"
     },
-    "Title": "Ludum Nostrum",
-    "MenuUser": {
-      "AlertDisable": "Deshabilitar alertas",
-      "AlertEnable": "Habilitar alertas",
-      "Login": "Iniciar sesión"
-    },
-    "Msg": {
-      "Cancel": "Cancelar",
-      "CloseSession": "Cerrar sesión",
-      "confirmLogout": "¿Está seguro que desea cerrar su sesión?",
-      "Exit": "Salir",
-      "Welcome": "Bienvenido {{value}}",
-      "Back": "Anterior",
-      "Next": "Siguiente",
-      "Reset": "Reiniciar"
-    }
-  },
-  "Footer": {
-    "Version": "versión",
-    "Author": {
-      "Contact": "Contacto",
-      "Profile": "Perfil"
-    },
-    "Resources": {
-      "About": "Sobre nosotros",
-      "Analytics": "Uso de datos",
-      "Blog": "Blog",
-      "Listing": "Enlaces",
-      "PressKit": "Kit de prensa"
-    }
+    "_Title": "LUDUM NOSTRUM"
   },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "Se le ha enviado un correo electrónico de confirmación.\\n   Revise su bandeja de entrada y haga clic en el enlace \\\"Confirmar mi correo electrónico\\\" para confirmar su dirección de correo electrónico.",
@@ -68,56 +39,55 @@
     "resetPasswordInstructionsText": "Restablecimiento solicitado. Revise sus instrucciones de correo electrónico.",
     "resetPasswordTabText": "Restablecer la dirección de correo electrónico a la contraseña",
     "signInCardTitleText": "Iniciando sesión",
-    "signInTabText": "Registrarse"
-  },
-  "pag404": {
-    "Title": "404"
-  },
-  "pagAbout": {
-    "Title": "Sobre nosotros"
-  },
-  "pagHome": {
-    "CreateGame": "Nuevo juego",
-    "GamesInProgress": "Juegos en curso",
-    "JoinGame": "Unirse",
-    "PlayNow": "Jugar ya!",
-    "SeparadorO": "o",
-    "Title": "Inicio",
-    "AbortQuickGame": "Oh no vas a jugar? Te esperamos una proxima vez.",
-    "Completed": "Completo",
-    "Delete": "Eliminar",
-    "GameDelete": "Juego eliminado",
-    "Go": "Ir",
-    "InfoGame": "Más información",
-    "IsNotLogined": "No se puede ejecutar esta acción sin estar loginado",
-    "LastTurn": "Ultimo turno",
-    "NewGameSuccess": "Has creado un juego",
-    "NoRecordsFound": "No existen registros",
-    "Open": "Abrir",
-    "State": "Estado",
-    "Surrender": "Abandonar",
-    "Waiting": "Esperando"
-  },
-  "Game": {
-    "Shared": {
-      "ChosseName": "Elija un nombre para esta partida",
-      "ChosseNameHintLabel": "Máximo 15 caracteres",
-      "CreateNewRecuitment": "Crear un nuevo juego",
-      "GameConfig": "Configuración",
-      "GameConfigSummary": "Resumen",
-      "GameDescriptionLabel": "Descripción",
-      "GameDescriptionPlaceHolder": "Opcional: Escriba una descripción",
-      "GameName": "Nombre del juego",
-      "GameNameIsRequired": "El nombre del juego es obligatorio",
-      "SendNewRecruitment": "Enviar",
-      "Defeat": "Derrota",
-      "SendTurn": "Enviar turno",
-      "Victory": "Victoria"
-    }
+    "signInTabText": "Registrarse",
+    "messageOnAuthSuccess": "Bienvenido"
   },
   "jumbotron": {
     "Linea1": "Voy a crear mis propios juegos!",
     "Linea2": "y los haré con",
     "Linea3": "y"
+  },
+  "Footer": {
+    "Blocks": {
+      "AboutUs": {
+        "Links": {
+          "aboutText": "Sobre nosotros",
+          "aboutToolTip": "Nuestro proyecto",
+          "contributorsText": "Colaboradores",
+          "contributorsToolTip": "Colaboradores"
+        },
+        "Title": "Sobre nosotros"
+      },
+      "Learning": {
+        "Links": {
+          "DDDText": "DDD (Simplificada)",
+          "DDDToolTip": "Domain Driven Design for dummies",
+          "GITText": "GIT",
+          "GITTooltip": "GIT Repository",
+          "MicroServicesText": "Micro servicios",
+          "MicroServicesToolTip": "Micro servicios",
+          "TestText": "Test ",
+          "TestToolTip": "Test"
+        },
+        "Title": "Aprendiendo"
+      },
+      "Profile": {
+        "Contact": "Contacto",
+        "Profile": "Perfil",
+        "Title": "Autor"
+      },
+      "Resources": {
+        "Links": {
+          "analyticsText": "Uso de datos",
+          "analyticsToolTip": "Uso de datos",
+          "blogText": "Blog",
+          "blogToolTip": "Blog",
+          "presskitText": "Kit de prensa",
+          "presskitToolTip": "Kit de prensa"
+        },
+        "Title": "Recursos"
+      }
+    },
+    "Version": "versión"
   }
 }

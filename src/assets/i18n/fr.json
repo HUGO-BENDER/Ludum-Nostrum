@@ -1,34 +1,4 @@
 ﻿{
-  "App": {
-    "Title": "Ludum Nostrum",
-    "Languages": {
-      "Catalan": "Catalan",
-      "English": "Anglais",
-      "French": "Le français",
-      "Galician": "Galicien",
-      "Spanish": "Espagnol"
-    },
-    "SideNav": {
-      "Select_lang": "Sélectionnez la langue",
-      "Actions": "Actions",
-      "Menu": "Menu"
-    },
-    "MenuUser": {
-      "AlertDisable": "Désactiver les alertes",
-      "AlertEnable": "Activer les alertes",
-      "Login": "Commencer la session"
-    },
-    "Msg": {
-      "Cancel": "Annuler",
-      "CloseSession": "Fermer la session",
-      "confirmLogout": "Êtes-vous sûr de vouloir vous déconnecter?",
-      "Exit": "sortir",
-      "Welcome": "Bienvenue {{value}}",
-      "Back": "Précédent",
-      "Next": "Suivant",
-      "Reset": "Redémarrer"
-    }
-  },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "Un email de confirmation vous a été envoyé.\\n   Vérifiez votre boîte de réception et cliquez sur le lien \\\"Confirmer mon adresse e-mail\\\" pour confirmer votre adresse e-mail.",
     "emailConfirmationTitle": "Confirmez votre adresse email!",
@@ -54,60 +24,69 @@
     "resetPasswordInstructionsText": "Réinitialisation demandée. Vérifiez vos instructions de courrier électronique.",
     "resetPasswordTabText": "Réinitialiser l'adresse email en mot de passe",
     "signInCardTitleText": "Connectez-vous",
-    "signInTabText": "se connecter"
+    "signInTabText": "se connecter",
+    "messageOnAuthSuccess": "Accueillir"
+  },
+  "App": {
+    "Languages": {
+      "Catalan": "Catalan",
+      "English": "Anglais",
+      "French": "Le français",
+      "Galician": "Galicien",
+      "Spanish": "Espagnol"
+    },
+    "SideNav": {
+      "Select_lang": "Sélectionnez la langue",
+      "Actions": "Actions",
+      "Menu": "Menu"
+    },
+    "_Title": "LUDUM NOSTRUM"
   },
   "Footer": {
     "Version": "version",
-    "Resources": "Moyens",
-    "Author": "Auteur"
-  },
-  "pag404": {
-    "Title": "404"
-  },
-  "pagAbout": {
-    "Title": "À propos de nous"
-  },
-  "pagHome": {
-    "CreateGame": "Nouveau jeu",
-    "GamesInProgress": "Jeux en cours",
-    "JoinGame": "Rejoindre",
-    "SeparadorO": "ou",
-    "PlayNow": "Joue maintenant!",
-    "Title": "Accueil",
-    "AbortQuickGame": "Oh tu ne joueras pas? Nous vous attendons la prochaine fois.",
-    "Completed": "Complète",
-    "Delete": "Enlever",
-    "GameDelete": "Jeu enlevé",
-    "Go": "Aller",
-    "InfoGame": "Plus d'informations",
-    "IsNotLogined": "Vous ne pouvez pas exécuter cette action sans être connecté",
-    "LastTurn": "Dernier quart de travail",
-    "NewGameSuccess": "Vous avez créé un jeu",
-    "NoRecordsFound": "Il n'y a pas d'enregistrements",
-    "Open": "Ouvert",
-    "State": "Etat",
-    "Surrender": "Abandonner",
-    "Waiting": "En attente de"
-  },
-  "Game": {
-    "Shared": {
-      "ChosseName": "Choisissez un nom pour ce jeu",
-      "ChosseNameHintLabel": "15 caractères maximum",
-      "CreateNewRecuitment": "Créer un nouveau jeu",
-      "GameConfig": "Configuration",
-      "GameConfigSummary": "résumé",
-      "GameDescriptionLabel": "Description",
-      "GameDescriptionPlaceHolder": "Facultatif: entrez une description",
-      "GameName": "Nom du jeu",
-      "GameNameIsRequired": "Le nom du jeu est obligatoire",
-      "SendNewRecruitment": "Envoyer",
-      "Defeat": "La défaite",
-      "SendTurn": "Shift a été envoyé",
-      "Victory": "Victoria"
+    "Blocks": {
+      "Resources": {
+        "Title": "Moyens",
+        "Links": {
+          "presskitToolTip": "dossier de presse",
+          "presskitText": "dossier de presse",
+          "blogToolTip": "Blog",
+          "blogText": "Blog",
+          "analyticsToolTip": "l'utilisation de données",
+          "analyticsText": "l'utilisation de données"
+        }
+      },
+      "Profile": {
+        "Title": "Auteur",
+        "Profile": "Profil",
+        "Contact": "Contact"
+      },
+      "Learning": {
+        "Title": "Apprentissage",
+        "Links": {
+          "TestToolTip": "Test",
+          "TestText": "Test",
+          "MicroServicesToolTip": "microservices",
+          "MicroServicesText": "microservices",
+          "GITTooltip": "Référentiel GIT",
+          "GITText": "GIT",
+          "DDDToolTip": "Architecture DDD",
+          "DDDText": "Architecture DDD"
+        }
+      },
+      "AboutUs": {
+        "Title": "À propos de nous",
+        "Links": {
+          "contributorsToolTip": "contributeurs",
+          "contributorsText": "contributeurs",
+          "aboutToolTip": "Notre projet",
+          "aboutText": "À propos de nous"
+        }
+      }
     }
   },
   "jumbotron": {
-    "Linea3": "et",
+    "Linea3": "Oui",
     "Linea2": "et je les ferai avec",
     "Linea1": "Je vais créer mes propres jeux !"
   }

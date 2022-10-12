@@ -1,34 +1,4 @@
 ﻿{
-  "App": {
-    "Title": "Ludum Nostrum",
-    "Languages": {
-      "Catalan": "Catalan",
-      "English": "English",
-      "French": "French",
-      "Galician": "Galician",
-      "Spanish": "Spanish"
-    },
-    "SideNav": {
-      "Select_lang": "Select language",
-      "Actions": "Actions",
-      "Menu": "Menu"
-    },
-    "MenuUser": {
-      "AlertDisable": "Disable alerts",
-      "AlertEnable": "Enable alerts",
-      "Login": "Log in"
-    },
-    "Msg": {
-      "Cancel": "Cancel",
-      "CloseSession": "Sign off",
-      "confirmLogout": "Are you sure you want to log out?",
-      "Exit": "Get out",
-      "Welcome": "Welcome {{value}}",
-      "Back": "Previous",
-      "Next": "Following",
-      "Reset": "Restart"
-    }
-  },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "A confirmation e-mail has been sent to you.\\n  Check your inbox and click on the link \\\"Confirm my e-mail\\\" to confirm your e-mail address.",
     "emailConfirmationTitle": "Confirm your e-mail address!",
@@ -54,60 +24,69 @@
     "resetPasswordInstructionsText": "Reset requested. Check your e-mail instructions.",
     "resetPasswordTabText": "Reset e-mail address to password",
     "signInCardTitleText": "Signing in",
-    "signInTabText": "Sign in"
+    "signInTabText": "Sign in",
+    "messageOnAuthSuccess": "Welcome"
+  },
+  "App": {
+    "Languages": {
+      "Catalan": "Catalan",
+      "English": "English",
+      "French": "French",
+      "Galician": "Galician",
+      "Spanish": "Spanish"
+    },
+    "SideNav": {
+      "Select_lang": "Select language",
+      "Actions": "Actions",
+      "Menu": "Menu"
+    },
+    "_Title": "LUDUM NOSTRUM"
   },
   "Footer": {
     "Version": "version",
-    "Resources": "Means",
-    "Author": "Author"
-  },
-  "pag404": {
-    "Title": "404"
-  },
-  "pagAbout": {
-    "Title": "About us"
-  },
-  "pagHome": {
-    "CreateGame": "New game",
-    "GamesInProgress": "Games in progress",
-    "JoinGame": "Join",
-    "SeparadorO": "or",
-    "PlayNow": "Play now!",
-    "Title": "Start",
-    "AbortQuickGame": "Oh you won't play? We wait for you next time.",
-    "Completed": "Full",
-    "Delete": "Remove",
-    "GameDelete": "Game removed",
-    "Go": "Go",
-    "InfoGame": "More information",
-    "IsNotLogined": "You cannot execute this action without being logged",
-    "LastTurn": "Last shift",
-    "NewGameSuccess": "You have created a game",
-    "NoRecordsFound": "There are no records",
-    "Open": "Open",
-    "State": "State",
-    "Surrender": "Leave",
-    "Waiting": "Waiting"
-  },
-  "Game": {
-    "Shared": {
-      "ChosseName": "Choose a name for this game",
-      "ChosseNameHintLabel": "15 characters maximum",
-      "CreateNewRecuitment": "Create a new game",
-      "GameConfig": "Configuration",
-      "GameConfigSummary": "Summary",
-      "GameDescriptionLabel": "Description",
-      "GameDescriptionPlaceHolder": "Optional: Enter a description",
-      "GameName": "Name of the game",
-      "GameNameIsRequired": "The name of the game is mandatory",
-      "SendNewRecruitment": "Submit",
-      "Defeat": "Defeat",
-      "SendTurn": "Shift has been sent",
-      "Victory": "Victory"
+    "Blocks": {
+      "Resources": {
+        "Title": "Means",
+        "Links": {
+          "presskitToolTip": "press kit",
+          "presskitText": "press kit",
+          "blogToolTip": "Blog",
+          "blogText": "Blog",
+          "analyticsToolTip": "data usage",
+          "analyticsText": "data usage"
+        }
+      },
+      "Profile": {
+        "Title": "Author",
+        "Profile": "Profile",
+        "Contact": "Contact"
+      },
+      "Learning": {
+        "Title": "Learning",
+        "Links": {
+          "TestToolTip": "Test",
+          "TestText": "Test",
+          "MicroServicesToolTip": "microservices",
+          "MicroServicesText": "microservices",
+          "GITTooltip": "GIT Repository",
+          "GITText": "GIT",
+          "DDDToolTip": "DDD architecture",
+          "DDDText": "DDD architecture"
+        }
+      },
+      "AboutUs": {
+        "Title": "About us",
+        "Links": {
+          "contributorsToolTip": "contributors",
+          "contributorsText": "contributors",
+          "aboutToolTip": "Our project",
+          "aboutText": "About us"
+        }
+      }
     }
   },
   "jumbotron": {
-    "Linea3": "and",
+    "Linea3": "Y",
     "Linea2": "and i will do them with",
     "Linea1": "I'm going to create my own games!"
   }

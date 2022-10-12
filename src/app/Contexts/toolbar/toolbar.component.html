@@ -3,12 +3,22 @@
     <app-logo (click)="toggleAppSidenav()"></app-logo>
     <div class="tool-bar-spacer">
       <span fxHide.lt-sm="true" class="fix-center-title">
-        {{ "App.Title"| translate }}
+        {{ "App._Title" | translate }}
       </span>
     </div>
-        <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">{{"App.MenuUser.Login" | translate }}</h3>
-        <button mat-mini-fab color="primary" (click)="goToAuth()">
-          <mat-icon class="iconlogin">how_to_reg</mat-icon>
-        </button>
+    <div *ngIf="user | async; let user; else: loguearse" fxLayout="row">
+      <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">
+        {{ user.displayName }}
+      </h3>
+      <ngx-auth-firebaseui-avatar></ngx-auth-firebaseui-avatar>
+    </div>
+    <ng-template #loguearse>
+      <h3 class="textlogin" fxHide.lt-sm="true" (click)="goToAuth()">
+        {{ "ngxauthfirebaseui.loginButtonText" | translate }}
+      </h3>
+      <button mat-mini-fab color="primary" (click)="goToAuth()">
+        <mat-icon class="iconlogin">how_to_reg</mat-icon>
+      </button>
+    </ng-template>
   </mat-toolbar-row>
 </mat-toolbar>
