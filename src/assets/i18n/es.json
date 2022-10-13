@@ -7,12 +7,18 @@
       "Galician": "Gallego",
       "Spanish": "Español"
     },
-    "SideNav": {
-      "Select_lang": "Seleccionar idioma",
-      "Actions": "Acciones",
-      "Menu": "Menú"
-    },
     "_Title": "LUDUM NOSTRUM"
+  },
+  "SideNav": {
+    "Actions": {
+      "SelectLanguage": "Seleccionar idioma",
+      "Header": "Acciones"
+    },
+    "Menu": {
+      "Header": "Menú",
+      "AboutUs": "Sobre nosotros",
+      "Home": "Home"
+    }
   },
   "ngxauthfirebaseui": {
     "emailConfirmationText": "Se le ha enviado un correo electrónico de confirmación.\\n   Revise su bandeja de entrada y haga clic en el enlace \\\"Confirmar mi correo electrónico\\\" para confirmar su dirección de correo electrónico.",
@@ -66,7 +72,7 @@
           "GITTooltip": "GIT Repository",
           "MicroServicesText": "Micro servicios",
           "MicroServicesToolTip": "Micro servicios",
-          "TestText": "Test ",
+          "TestText": "Test",
           "TestToolTip": "Test"
         },
         "Title": "Aprendiendo"
@@ -89,5 +95,18 @@
       }
     },
     "Version": "versión"
+  },
+  "Products": {
+    "Chess": {
+      "Description": "Lorem ipsum dolor sit amet, eos nemore nostrud vivendum ea, soluta sententiae",
+      "Subtitle": "Ajedrez clásico",
+      "Title": "Ajedrez"
+    },
+    "GoToPage": "Ir a la página",
+    "Plague": {
+      "Description": "Inocula todos los pacientes en 25 movimientos antes que se conviertan en zombies.",
+      "Subtitle": "Salva el mundo",
+      "Title": "Plaga"
+    }
   }
 }

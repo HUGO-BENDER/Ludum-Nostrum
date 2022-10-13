@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Product } from '../domain/product-model';
+import { ProductUsecaseService } from '../domain/product-usecase.service';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -7,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  products = [1,2,3,4,5];
+  products!: Promise<Product[]>
 
-
-  constructor() { }
+  constructor( private _providerUseCases: ProductUsecaseService ) { }
 
   ngOnInit(): void {
+    this.products = this._providerUseCases.getProductList();
   }
 
 }

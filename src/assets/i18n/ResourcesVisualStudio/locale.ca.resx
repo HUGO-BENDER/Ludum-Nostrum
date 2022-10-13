@@ -132,14 +132,14 @@
   <data name="App.Languages.Spanish" xml:space="preserve">
     <value>Espanyol</value>
   </data>
-  <data name="App.SideNav.Select_lang" xml:space="preserve">
-    <value>seleccionar idioma</value>
+  <data name="SideNav.Menu.Header" xml:space="preserve">
+    <value>Menú</value>
   </data>
-  <data name="App.SideNav.Actions" xml:space="preserve">
-    <value>accions</value>
+  <data name="SideNav.Actions.Header" xml:space="preserve">
+    <value>Accions</value>
   </data>
-  <data name="App.SideNav.Menu" xml:space="preserve">
-    <value>menú</value>
+  <data name="SideNav.Actions.SelectLanguage" xml:space="preserve">
+    <value>Seleccionar idioma</value>
   </data>
   <data name="Footer.Version" xml:space="preserve">
     <value>versió</value>
@@ -305,5 +305,32 @@
   </data>
   <data name="App._Title" xml:space="preserve">
     <value>LUDUM NOSTRUM</value>
+  </data>
+  <data name="SideNav.Menu.AboutUs" xml:space="preserve">
+    <value>Sobre nosaltres</value>
+  </data>
+  <data name="SideNav.Menu.Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Products.Chess.Description" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, eus nemore nostrud vivendum ea, soluta sententiae</value>
+  </data>
+  <data name="Products.Chess.Subtitle" xml:space="preserve">
+    <value>Escacs clàssic</value>
+  </data>
+  <data name="Products.Chess.Title" xml:space="preserve">
+    <value>Escacs</value>
+  </data>
+  <data name="Products.GoToPage" xml:space="preserve">
+    <value>Anar a la pàgina</value>
+  </data>
+  <data name="Products.Plague.Description" xml:space="preserve">
+    <value>Inocula tots els pacients en 25 moviments abans que es converteixin en zombis.</value>
+  </data>
+  <data name="Products.Plague.Subtitle" xml:space="preserve">
+    <value>Salva el món</value>
+  </data>
+  <data name="Products.Plague.Title" xml:space="preserve">
+    <value>Plaga</value>
   </data>
 </root>

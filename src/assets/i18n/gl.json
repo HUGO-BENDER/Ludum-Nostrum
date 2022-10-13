@@ -7,12 +7,18 @@
       "Galician": "Galego",
       "Spanish": "Español"
     },
-    "SideNav": {
-      "Select_lang": "Seleccionar idioma",
-      "Actions": "Accións",
-      "Menu": "Menú"
-    },
     "_Title": "LUDUM NOSTRUM"
+  },
+  "SideNav": {
+    "Menu": {
+      "Header": "Menú",
+      "AboutUs": "Sobre nós",
+      "Home": "casa"
+    },
+    "Actions": {
+      "Header": "Accións",
+      "SelectLanguage": "Seleccione o idioma"
+    }
   },
   "Footer": {
     "Version": "versión",
@@ -89,5 +95,18 @@
     "Linea3": "Y",
     "Linea2": "e fareinos con eles",
     "Linea1": "Vou crear os meus propios xogos!"
+  },
+  "Products": {
+    "Chess": {
+      "Description": "Lorem ipsum pain sit amet, eos nemore nostrud vivendum ea, soluta sententiae",
+      "Subtitle": "xadrez clásico",
+      "Title": "Xadrez"
+    },
+    "GoToPage": "ir á páxina",
+    "Plague": {
+      "Description": "Inocula a todos os pacientes en 25 movementos antes de que se convertan en zombies.",
+      "Subtitle": "Salvar o mundo",
+      "Title": "Peste"
+    }
   }
 }

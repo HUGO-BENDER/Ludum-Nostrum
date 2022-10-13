@@ -7,12 +7,18 @@
       "Galician": "Gallego",
       "Spanish": "Espanyol"
     },
-    "SideNav": {
-      "Select_lang": "seleccionar idioma",
-      "Actions": "accions",
-      "Menu": "menú"
-    },
     "_Title": "LUDUM NOSTRUM"
+  },
+  "SideNav": {
+    "Menu": {
+      "Header": "Menú",
+      "AboutUs": "Sobre nosaltres",
+      "Home": "Home"
+    },
+    "Actions": {
+      "Header": "Accions",
+      "SelectLanguage": "Seleccionar idioma"
+    }
   },
   "Footer": {
     "Version": "versió",
@@ -89,5 +95,18 @@
     "Linea3": "i",
     "Linea2": "i els faré amb",
     "Linea1": "Crearé els meus propis jocs!"
+  },
+  "Products": {
+    "Chess": {
+      "Description": "Lorem ipsum dolor sit amet, eus nemore nostrud vivendum ea, soluta sententiae",
+      "Subtitle": "Escacs clàssic",
+      "Title": "Escacs"
+    },
+    "GoToPage": "Anar a la pàgina",
+    "Plague": {
+      "Description": "Inocula tots els pacients en 25 moviments abans que es converteixin en zombis.",
+      "Subtitle": "Salva el món",
+      "Title": "Plaga"
+    }
   }
 }

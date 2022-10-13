@@ -132,17 +132,17 @@
   <data name="App.Languages.Spanish" xml:space="preserve">
     <value>Español</value>
   </data>
-  <data name="App.SideNav.Select_lang" xml:space="preserve">
+  <data name="SideNav.Actions.SelectLanguage" xml:space="preserve">
     <value>Seleccionar idioma</value>
   </data>
   <data name="App._Title" xml:space="preserve">
     <value>LUDUM NOSTRUM</value>
     <comment>NOT_TRANSLATE</comment>
   </data>
-  <data name="App.SideNav.Actions" xml:space="preserve">
+  <data name="SideNav.Actions.Header" xml:space="preserve">
     <value>Acciones</value>
   </data>
-  <data name="App.SideNav.Menu" xml:space="preserve">
+  <data name="SideNav.Menu.Header" xml:space="preserve">
     <value>Menú</value>
   </data>
   <data name="ngxauthfirebaseui.emailConfirmationText" xml:space="preserve">
@@ -239,19 +239,19 @@
     <value>Nuestro proyecto</value>
   </data>
   <data name="Footer.Blocks.AboutUs.Links.contributorsText" xml:space="preserve">
-    <value>Contribuidores</value>
+    <value>Colaboradores</value>
   </data>
   <data name="Footer.Blocks.AboutUs.Links.contributorsToolTip" xml:space="preserve">
-    <value>Contribuidores</value>
+    <value>Colaboradores</value>
   </data>
   <data name="Footer.Blocks.AboutUs.Title" xml:space="preserve">
     <value>Sobre nosotros</value>
   </data>
   <data name="Footer.Blocks.Learning.Links.DDDText" xml:space="preserve">
-    <value>Arquitectura DDD</value>
+    <value>DDD (Simplificada)</value>
   </data>
   <data name="Footer.Blocks.Learning.Links.DDDToolTip" xml:space="preserve">
-    <value>Arquitectura DDD</value>
+    <value>Domain Driven Design for dummies</value>
   </data>
   <data name="Footer.Blocks.Learning.Links.GITText" xml:space="preserve">
     <value>GIT</value>
@@ -306,5 +306,32 @@
   </data>
   <data name="Footer.Version" xml:space="preserve">
     <value>versión</value>
+  </data>
+  <data name="SideNav.Menu.AboutUs" xml:space="preserve">
+    <value>Sobre nosotros</value>
+  </data>
+  <data name="SideNav.Menu.Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Products.Chess.Description" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, eos nemore nostrud vivendum ea, soluta sententiae</value>
+  </data>
+  <data name="Products.Chess.Subtitle" xml:space="preserve">
+    <value>Ajedrez clásico</value>
+  </data>
+  <data name="Products.Chess.Title" xml:space="preserve">
+    <value>Ajedrez</value>
+  </data>
+  <data name="Products.GoToPage" xml:space="preserve">
+    <value>Ir a la página</value>
+  </data>
+  <data name="Products.Plague.Description" xml:space="preserve">
+    <value>Inocula todos los pacientes en 25 movimientos antes que se conviertan en zombies.</value>
+  </data>
+  <data name="Products.Plague.Subtitle" xml:space="preserve">
+    <value>Salva el mundo</value>
+  </data>
+  <data name="Products.Plague.Title" xml:space="preserve">
+    <value>Plaga</value>
   </data>
 </root>

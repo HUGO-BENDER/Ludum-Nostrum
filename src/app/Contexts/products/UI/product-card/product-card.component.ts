@@ -11,4 +11,8 @@ export class ProductCardComponent {
 
   constructor() { }
 
+  navigateTo(url: string){
+    alert("Nos vamos a " + this.product.id)
+  }
+
 }

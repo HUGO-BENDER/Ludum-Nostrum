@@ -207,14 +207,14 @@
   <data name="App.Languages.Spanish" xml:space="preserve">
     <value>Spanish</value>
   </data>
-  <data name="App.SideNav.Select_lang" xml:space="preserve">
-    <value>Select language</value>
+  <data name="SideNav.Menu.Header" xml:space="preserve">
+    <value>Menu</value>
   </data>
-  <data name="App.SideNav.Actions" xml:space="preserve">
+  <data name="SideNav.Actions.Header" xml:space="preserve">
     <value>Actions</value>
   </data>
-  <data name="App.SideNav.Menu" xml:space="preserve">
-    <value>Menu</value>
+  <data name="SideNav.Actions.SelectLanguage" xml:space="preserve">
+    <value>Select language</value>
   </data>
   <data name="Footer.Version" xml:space="preserve">
     <value>version</value>
@@ -305,5 +305,32 @@
   </data>
   <data name="App._Title" xml:space="preserve">
     <value>LUDUM NOSTRUM</value>
+  </data>
+  <data name="SideNav.Menu.AboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="SideNav.Menu.Home" xml:space="preserve">
+    <value>home</value>
+  </data>
+  <data name="Products.Chess.Description" xml:space="preserve">
+    <value>Lorem ipsum pain sit amet, eos nemore nostrud vivendum ea, soluta sententiae</value>
+  </data>
+  <data name="Products.Chess.Subtitle" xml:space="preserve">
+    <value>classic chess</value>
+  </data>
+  <data name="Products.Chess.Title" xml:space="preserve">
+    <value>Chess</value>
+  </data>
+  <data name="Products.GoToPage" xml:space="preserve">
+    <value>go to page</value>
+  </data>
+  <data name="Products.Plague.Description" xml:space="preserve">
+    <value>Inoculate all patients in 25 moves before they turn into zombies.</value>
+  </data>
+  <data name="Products.Plague.Subtitle" xml:space="preserve">
+    <value>Save the world</value>
+  </data>
+  <data name="Products.Plague.Title" xml:space="preserve">
+    <value>Plague</value>
   </data>
 </root>

@@ -35,12 +35,18 @@
       "Galician": "Galician",
       "Spanish": "Spanish"
     },
-    "SideNav": {
-      "Select_lang": "Select language",
-      "Actions": "Actions",
-      "Menu": "Menu"
-    },
     "_Title": "LUDUM NOSTRUM"
+  },
+  "SideNav": {
+    "Menu": {
+      "Header": "Menu",
+      "AboutUs": "About us",
+      "Home": "home"
+    },
+    "Actions": {
+      "Header": "Actions",
+      "SelectLanguage": "Select language"
+    }
   },
   "Footer": {
     "Version": "version",
@@ -89,5 +95,18 @@
     "Linea3": "Y",
     "Linea2": "and i will do them with",
     "Linea1": "I'm going to create my own games!"
+  },
+  "Products": {
+    "Chess": {
+      "Description": "Lorem ipsum pain sit amet, eos nemore nostrud vivendum ea, soluta sententiae",
+      "Subtitle": "classic chess",
+      "Title": "Chess"
+    },
+    "GoToPage": "go to page",
+    "Plague": {
+      "Description": "Inoculate all patients in 25 moves before they turn into zombies.",
+      "Subtitle": "Save the world",
+      "Title": "Plague"
+    }
   }
 }

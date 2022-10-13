@@ -1,10 +1,10 @@
 <mat-toolbar color="primary" class="mat-elevation-z10">
-  {{ 'App.SideNav.Actions' | translate }}
+  {{ 'SideNav.Actions.Header' | translate }}
 </mat-toolbar>
 <mat-nav-list>
   <a mat-list-item (click)="showMenuLanguage = !showMenuLanguage">
     <mat-icon matListIcon>translate</mat-icon>
-    {{ 'App.SideNav.Select_lang' | translate }}
+    {{ 'SideNav.Actions.SelectLanguage' | translate }}
     <mat-icon *ngIf="!showMenuLanguage">chevron_right</mat-icon>
     <mat-icon *ngIf="showMenuLanguage">expand_more</mat-icon>
   </a>
@@ -17,14 +17,14 @@
     </mat-list-item>
   </mat-nav-list>
 </mat-nav-list>
-<mat-toolbar color="primary" class="mat-elevation-z10">  {{ 'App.SideNav.Menu' | translate }}  </mat-toolbar>
+<mat-toolbar color="primary" class="mat-elevation-z10">  {{ 'SideNav.Menu.Header' | translate }}  </mat-toolbar>
 <mat-nav-list>
   <a mat-list-item [routerLink]="['/home']" routerLinkActive="active" (click)='sidenavClose()'>
     <mat-icon matListIcon>home</mat-icon>
-    {{ 'pagHome.Title' | translate }}
+    {{ 'SideNav.Menu.Home' | translate }}
   </a>
   <a mat-list-item [routerLink]="['/about']" routerLinkActive="active" (click)='sidenavClose()'>
     <mat-icon matListIcon>persons</mat-icon>
-    {{ 'pagAbout.Title' | translate }}
+    {{ 'SideNav.Menu.AboutUs' | translate }}
   </a>
 </mat-nav-list>

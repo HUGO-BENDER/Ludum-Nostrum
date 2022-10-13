@@ -1,17 +1,14 @@
 <mat-card>
   <mat-card-header>
-      <mat-card-title>Title</mat-card-title>
-      <mat-card-subtitle>Subtitle</mat-card-subtitle>
+      <mat-card-title>{{product.title | translate}}</mat-card-title>
+      <mat-card-subtitle>{{product.subtitle| translate}}</mat-card-subtitle>
+      <img mat-card-avatar class="game-avatar-image" [src]=product.iconPath />
   </mat-card-header>
-  <img matCardImage src="Card wide image source">
+  <img matCardImage [src]=product.bkPath (dblclick)="navigateTo(product.url)">
   <mat-card-content>
-      Text content
+    {{product.description | translate}}
   </mat-card-content>
-  <mat-card-actions align="start">
-      <button mat-button >Action1</button>
-
+  <mat-card-actions>
+      <button mat-button (click)="navigateTo(product.url)">{{ "Products.GoToPage" | translate}}</button>
   </mat-card-actions>
-  <mat-card-footer>
-      Footer
-  </mat-card-footer>
 </mat-card>
