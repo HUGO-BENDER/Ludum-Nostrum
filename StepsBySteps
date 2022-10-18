@@ -416,8 +416,18 @@ Deploy
     firebase login
     firebase init hosting
     (ng build)
-    firebase deploy
+    firebase deploy --only hosting
 
+      use dist/ for builº
+      change angular.json
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "1mb",
+              "maximumError": "5mb"
+            },
 
 
 
