@@ -410,6 +410,16 @@ Step 021
 
 
 
+Step 999
+Deploy
+    npm install -g firebase-tools
+    firebase login
+    firebase init hosting
+    (ng build)
+    firebase deploy
+
+
+
 
 
 

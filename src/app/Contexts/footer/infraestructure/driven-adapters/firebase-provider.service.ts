@@ -19,6 +19,7 @@ export class FooterFirebaseProviderService extends FooterGateway {
       .doc('Metadata')
       .ref.get()
       .then(function (d) {
+        console.log(d.data);
         return Promise.resolve(<Metadata>d.data());
       });
   }

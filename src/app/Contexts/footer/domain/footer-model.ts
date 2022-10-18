@@ -1,10 +1,16 @@
 export interface Metadata {
-  author: string;
+  profileAuthor: ProfileAuthor;
   company: string;
   license: string;
   name: string;
   year: number;
   version: string;
+}
+
+export interface ProfileAuthor{
+  name: string;
+  job: string;
+  email: string;
 }
 
 export interface FooterBlock {

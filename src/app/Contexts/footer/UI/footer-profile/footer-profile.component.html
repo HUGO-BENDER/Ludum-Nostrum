@@ -3,8 +3,8 @@
   <div class="container-square-picture">
     <div class="profile-author-picture"></div>
   </div>
-  <div>Hugo Bender</div>
+  <div>{{profile?.name}}</div>
   <br>
-  <div>{{ 'Footer.Blocks.Profile.Profile' | translate}}: Developer</div>
-  <div>{{ 'Footer.Blocks.Profile.Contact' | translate}}: <a href="mailto:benderhugo@gmail.com">benderhugo@gmail.com</a></div>
+  <div>{{ 'Footer.Blocks.Profile.Profile' | translate}}: {{profile?.job}}</div>
+  <div>{{ 'Footer.Blocks.Profile.Contact' | translate}}: <a [href]="'mailto:' + profile?.email">{{profile?.email}}</a></div>
 </div>

@@ -9,7 +9,7 @@
       <app-footer-block [block]= block></app-footer-block>
     </div>
     <div fxFlex="20" fxFlex.sm="50" >
-      <app-footer-profile></app-footer-profile>
+      <app-footer-profile [profile]= (infoMetadata|async)?.profileAuthor></app-footer-profile>
     </div>
   </div>
   <div fxLayout="column" fxLayoutAlign="center center">

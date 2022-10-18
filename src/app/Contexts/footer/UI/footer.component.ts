@@ -1,6 +1,6 @@
-import { FooterBlock, Metadata } from '../domain/footer-model';
 import { Component, OnInit } from '@angular/core';
 import { FooterUsecaseService } from '../domain/footer-usecase.service';
+import { FooterBlock, Metadata } from '../domain/footer-model';
 
 @Component({
   selector: 'app-footer',
