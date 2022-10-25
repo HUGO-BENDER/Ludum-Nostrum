@@ -418,7 +418,10 @@ Deploy
     (ng build)
     firebase deploy --only hosting
 
-      use dist/ for build
+      use dist/ for build in firebase.json
+      "hosting": {
+        "public": "dist/ludum-nostrum",
+
       change angular.json
       "configurations": {
         "production": {
