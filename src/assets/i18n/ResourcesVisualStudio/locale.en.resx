@@ -333,4 +333,22 @@
   <data name="Products.Plague.Title" xml:space="preserve">
     <value>Plague</value>
   </data>
+  <data name="Products.Dev001-Plague.Description1" xml:space="preserve">
+    <value>ng-flow proof of concept. Everything in Angular. Minimum Viable Product. basic mechanics</value>
+  </data>
+  <data name="Products.Dev001-Plague.Subtitle1" xml:space="preserve">
+    <value>Plague Concept</value>
+  </data>
+  <data name="Products.Dev001-Plague.Title1" xml:space="preserve">
+    <value>Scourge MVP</value>
+  </data>
+  <data name="Products.Dev002-Plague.Description2" xml:space="preserve">
+    <value>Refactor. Animations. Auth. DB. Menu. levels. Secondary Mechanics. Punctuation.</value>
+  </data>
+  <data name="Products.Dev002-Plague.Subtitle2" xml:space="preserve">
+    <value>Beta Development v1.0.0</value>
+  </data>
+  <data name="Products.Dev002-Plague.Title2" xml:space="preserve">
+    <value> beta plague</value>
+  </data>
 </root>

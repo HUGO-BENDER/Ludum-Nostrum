@@ -107,6 +107,16 @@
       "Description": "Inocula tots els pacients en 25 moviments abans que es converteixin en zombis.",
       "Subtitle": "Salva el món",
       "Title": "Plaga"
+    },
+    "Dev001-Plague": {
+      "Description": "Prova de concepte ng-flow. Tot a Angular. Producte Mínim Viable. Mecànica bàsica",
+      "Subtitle1": "Concepte Plaga",
+      "Title": "MVP Plaga"
+    },
+    "Dev002-Plague": {
+      "Description": "Refactor. Animacions. Auth. DB. Menu. Nivells. Mecàniques Secundàries. Puntuació.",
+      "Subtitle": "Beta Desenvolupament v 1.0.0",
+      "Title": " Plaga Beta"
     }
   }
 }

@@ -107,6 +107,16 @@
       "Description": "Inoculez tous les patients en 25 mouvements avant qu'ils ne se transforment en zombies.",
       "Subtitle": "Sauver le monde",
       "Title": "Peste"
+    },
+    "Dev001-Plague": {
+      "Description": "preuve de concept ng-flow. Tout en angulaire. Produit minimum viable. mécanique de base",
+      "Subtitle": "Concept de peste",
+      "Title": "MVP du Fléau"
+    },
+    "Dev002-Plague": {
+      "Description": "Refactoriser. Animations. Auth. BD. Menu. niveaux. Mécanique secondaire. Ponctuation.",
+      "Subtitle": "Développement bêta v1.0.0",
+      "Title": " peste bêta"
     }
   }
 }

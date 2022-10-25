@@ -41,7 +41,7 @@ Step 007:
   ng add @angular/material
     --Purple/Green
   ng g m share/app.material  or  appMaterial
-  select de name: export class AppMaterialModule { }
+  select name: export class AppMaterialModule { }
   start with MatSidenavModule. export in AppMaterialModule
   import AppMaterialModule in app.module
   copy in app.component.html
@@ -418,7 +418,7 @@ Deploy
     (ng build)
     firebase deploy --only hosting
 
-      use dist/ for builº
+      use dist/ for build
       change angular.json
       "configurations": {
         "production": {

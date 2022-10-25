@@ -22,17 +22,37 @@ export class ProductHardcodeProviderService extends ProductGateway {
       url: ''
     }
     const product02: Product = {
+      id: 'dev001-plague',
+      isActive: true,
+      title: 'Products.Dev001-Plague.Title',
+      subtitle: 'Products.Dev001-Plague.Subtitle',
+      iconPath: '../../../assets/products/dev001-plague/icon.jpg',
+      bkPath: '../../../assets/products/dev001-plague/dev001-plague.png',
+      description: 'Products.Dev001-Plague.Description',
+      url: 'https://dev001-ng-flow.web.app/'
+    }
+    const product03: Product = {
+      id: 'dev002-plague',
+      isActive: true,
+      title: 'Products.Dev002-Plague.Title',
+      subtitle: 'Products.Dev002-Plague.Subtitle',
+      iconPath: '../../../assets/products/dev001-plague/icon.jpg',
+      bkPath: '../../../assets/products/dev001-plague/dev001-plague.png',
+      description: 'Products.Dev002-Plague.Description',
+      url: ''
+    }
+    const product04: Product = {
       id: 'plague',
       isActive: true,
       title: 'Products.Plague.Title',
       subtitle: 'Products.Plague.Subtitle',
       iconPath: '../../../assets/products/emptyIcon.svg',
-      bkPath: '../../../assets/products/empty300x300.jpg',
+      bkPath: '../../../assets/products/plague/plague.png',
       description: 'Products.Plague.Description',
       url: ''
     }
-    const product03: Product = {
-      id: '03',
+    const product10: Product = {
+      id: '10',
       isActive: true,
       title: 'Lorem ipsum',
       subtitle: 'Mea munere antiopam at',
@@ -45,9 +65,11 @@ export class ProductHardcodeProviderService extends ProductGateway {
         product01,
         product02,
         product03,
-        product03,
-        product03,
-        product03
+        product04,
+        product10,
+        product10,
+        product10,
+        product10
     ])
   }
 }

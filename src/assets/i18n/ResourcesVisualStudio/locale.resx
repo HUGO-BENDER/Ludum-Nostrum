@@ -334,4 +334,22 @@
   <data name="Products.Plague.Title" xml:space="preserve">
     <value>Plaga</value>
   </data>
+  <data name="Products.Dev001-Plague.Description1" xml:space="preserve">
+    <value>Prueba de concepto ng-flow. Todo en Angular. Producto Mínimo Viable. Mecánica básica</value>
+  </data>
+  <data name="Products.Dev001-Plague.Subtitle1" xml:space="preserve">
+    <value>Concepto Plaga </value>
+  </data>
+  <data name="Products.Dev001-Plague.Title1" xml:space="preserve">
+    <value>MVP Plaga</value>
+  </data>
+  <data name="Products.Dev002-Plague.Description2" xml:space="preserve">
+    <value>Refactor. Animaciones. Auth. DB. Menu. Niveles. Mecánicas Secundarias. Puntuación.</value>
+  </data>
+  <data name="Products.Dev002-Plague.Subtitle2" xml:space="preserve">
+    <value>Beta Desarrollo v 1.0.0</value>
+  </data>
+  <data name="Products.Dev002-Plague.Title2" xml:space="preserve">
+    <value> Plaga Beta</value>
+  </data>
 </root>

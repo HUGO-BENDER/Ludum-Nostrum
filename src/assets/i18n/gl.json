@@ -107,6 +107,16 @@
       "Description": "Inocula a todos os pacientes en 25 movementos antes de que se convertan en zombies.",
       "Subtitle": "Salvar o mundo",
       "Title": "Peste"
+    },
+    "Dev001-Plague": {
+      "Description": "proba de concepto ng-flow. Todo en Angular. Produto mínimo viable. mecánica básica",
+      "Subtitle": "Concepto de peste",
+      "Title": "MVP da lacra"
+    },
+    "Dev002-Plague": {
+      "Description": "Refactorización. Animacións. Auth. DB. Menú. niveis. Mecánica secundaria. A puntuación.",
+      "Subtitle": "Desenvolvemento beta v1.0.0",
+      "Title": " peste beta"
     }
   }
 }

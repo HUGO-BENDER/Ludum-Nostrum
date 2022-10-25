@@ -107,6 +107,16 @@
       "Description": "Inoculate all patients in 25 moves before they turn into zombies.",
       "Subtitle": "Save the world",
       "Title": "Plague"
+    },
+    "Dev001-Plague": {
+      "Description": "ng-flow proof of concept. Everything in Angular. Minimum Viable Product. basic mechanics",
+      "Subtitle": "Plague Concept",
+      "Title": "Scourge MVP"
+    },
+    "Dev002-Plague": {
+      "Description": "Refactor. Animations. Auth. DB. Menu. levels. Secondary Mechanics. Punctuation.",
+      "Subtitle": "Beta Development v1.0.0",
+      "Title": " beta plague"
     }
   }
 }

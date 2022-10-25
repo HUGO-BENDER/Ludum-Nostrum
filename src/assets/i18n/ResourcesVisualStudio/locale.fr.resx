@@ -333,4 +333,22 @@
   <data name="Products.Plague.Title" xml:space="preserve">
     <value>Peste</value>
   </data>
+  <data name="Products.Dev001-Plague.Description1" xml:space="preserve">
+    <value>preuve de concept ng-flow. Tout en angulaire. Produit minimum viable. mécanique de base</value>
+  </data>
+  <data name="Products.Dev001-Plague.Subtitle1" xml:space="preserve">
+    <value>Concept de peste</value>
+  </data>
+  <data name="Products.Dev001-Plague.Title1" xml:space="preserve">
+    <value>MVP du Fléau</value>
+  </data>
+  <data name="Products.Dev002-Plague.Description2" xml:space="preserve">
+    <value>Refactoriser. Animations. Auth. BD. Menu. niveaux. Mécanique secondaire. Ponctuation.</value>
+  </data>
+  <data name="Products.Dev002-Plague.Subtitle2" xml:space="preserve">
+    <value>Développement bêta v1.0.0</value>
+  </data>
+  <data name="Products.Dev002-Plague.Title2" xml:space="preserve">
+    <value> peste bêta</value>
+  </data>
 </root>

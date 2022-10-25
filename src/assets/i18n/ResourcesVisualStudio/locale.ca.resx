@@ -333,4 +333,22 @@
   <data name="Products.Plague.Title" xml:space="preserve">
     <value>Plaga</value>
   </data>
+  <data name="Products.Dev001-Plague.Description1" xml:space="preserve">
+    <value>Prova de concepte ng-flow. Tot a Angular. Producte Mínim Viable. Mecànica bàsica</value>
+  </data>
+  <data name="Products.Dev001-Plague.Subtitle1" xml:space="preserve">
+    <value>Concepte Plaga</value>
+  </data>
+  <data name="Products.Dev001-Plague.Title1" xml:space="preserve">
+    <value>MVP Plaga</value>
+  </data>
+  <data name="Products.Dev002-Plague.Description2" xml:space="preserve">
+    <value>Refactor. Animacions. Auth. DB. Menu. Nivells. Mecàniques Secundàries. Puntuació.</value>
+  </data>
+  <data name="Products.Dev002-Plague.Subtitle2" xml:space="preserve">
+    <value>Beta Desenvolupament v 1.0.0</value>
+  </data>
+  <data name="Products.Dev002-Plague.Title2" xml:space="preserve">
+    <value> Plaga Beta</value>
+  </data>
 </root>
